@@ -37,6 +37,11 @@ jobs:
         run: pnpm run typecheck
 
       - name: 运行测试
+        # Windows 用户临时目录可能使用 8.3 别名，与真实路径校验不一致。
+        # 使用 runner 的专用目录，不放宽应用对符号链接和目录联接的拒绝规则。
+        env:
+          TEMP: ${{ runner.temp }}
+          TMP: ${{ runner.temp }}
         run: pnpm run test:ci
 
       - name: 构建应用
