@@ -32,3 +32,24 @@ nsis:
   shortcutName: Codex-Manager
   deleteAppDataOnUninstall: false
 
+mac:
+  icon: resources/icon.png
+  category: public.app-category.developer-tools
+  # 本地签名不等同于 Apple 开发者身份签名或公证。
+  identity: '-'
+  hardenedRuntime: false
+  notarize: false
+  target:
+    - dmg
+    - zip
+  artifactName: Codex-Manager-${version}-macOS-${arch}.${ext}
+
+linux:
+  icon: resources/icon.png
+  category: Development
+  maintainer: pen9un <pen9un@users.noreply.github.com>
+  target:
+    - AppImage
+    - deb
+  artifactName: Codex-Manager-${version}-Linux-${arch}.${ext}
+

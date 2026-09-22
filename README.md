@@ -6,7 +6,7 @@
 <p align="center">账号随设备流转，让会话、记忆、工具和主题各就其位。</p>
 <p align="center">
   <a href="https://github.com/pen9un/codex-manager"><img src="https://img.shields.io/badge/version-2.0.1-3867B2" alt="源码版本 2.0.1" /></a>
-  <img src="https://img.shields.io/badge/platform-Windows_x64-0078D4" alt="当前构建平台 Windows x64" />
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-0078D4" alt="构建平台 Windows、macOS 和 Linux" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22A06B" alt="项目代码使用 MIT 许可证" /></a>
   <a href="https://github.com/pen9un/codex-manager/actions/workflows/ci.yml"><img src="https://github.com/pen9un/codex-manager/actions/workflows/ci.yml/badge.svg" alt="CI 执行状态" /></a>
 </p>
@@ -179,9 +179,18 @@ Skills 按应用识别的用户级和当前工作目录范围扫描；“项目�
 
 ### 安装包
 
-在 [GitHub Releases](https://github.com/pen9un/codex-manager/releases) 查看已发布版本及安装说明。当前构建目标为 **Windows x64**，安装包命名为 `Codex-Manager-<版本>-Windows-x64.exe`。
+在 [GitHub Releases](https://github.com/pen9un/codex-manager/releases) 下载适合设备的安装包：
 
-如果 Releases 暂无安装包，可以按下方步骤从源码启动。当前未配置代码签名；macOS / Linux 尚未完成实机和安装包验收。
+| 系统 | 架构 | 文件名中的标记 | 格式 |
+| --- | --- | --- | --- |
+| Windows | x64 | `Windows-x64` | `.exe` 安装程序 |
+| macOS · Intel | x64 | `macOS-x64` | `.dmg`、`.zip` |
+| macOS · Apple Silicon | arm64 | `macOS-arm64` | `.dmg`、`.zip` |
+| Linux | x64 | `Linux-x64` | `.AppImage`、`.deb` |
+
+文件名格式为 `Codex-Manager-<版本>-<系统>-<架构>.<扩展名>`。每次自动发布都附带 `SHA256SUMS.txt`，用于核对下载文件的 SHA-256。
+
+如果 Releases 暂无安装包，可以从源码启动，或到 [Actions](https://github.com/pen9un/codex-manager/actions/workflows/ci.yml) 下载成功构建的 `release-bundle`（需要登录 GitHub）。Windows 安装器尚无开发者证书签名；macOS 采用 ad-hoc 签名，尚未进行 Apple 公证。自动化构建不替代安装、升级及桌面功能的实机验收。
 
 ### 从源码运行
 
@@ -241,6 +250,12 @@ pnpm run build
 
 # 构建 Windows 安装包
 pnpm run build:win
+
+# 在 macOS 上构建本机架构的 DMG 和 ZIP
+pnpm run build:mac
+
+# 在 Linux 上构建 x64 AppImage 和 DEB
+pnpm run build:linux
 ```
 
 完整构建入口为 `scripts/build-windows.bat`，包含锁定依赖安装、测试、生产构建和 Windows 打包：
@@ -249,7 +264,21 @@ pnpm run build:win
 cmd /c scripts\build-windows.bat
 ```
 
-产物输出到 `releases/`。CI 在 Windows 上执行依赖安装、类型检查、自动化测试和生产构建；安装包和跨平台验证另行验收。
+产物输出到 `releases/`。CI 使用 Windows x64、macOS Intel、macOS Apple Silicon 和 Linux x64 四个原生构建环境，执行测试、类型检查、生产构建和打包，最后验证全部安装包并生成校验清单。
+
+### 自动发布 Release
+
+将 `package.json` 更新为目标版本并提交后，推送同名 `v` 标签即可触发发布。例如版本为 `2.0.2` 时：
+
+```bash
+git tag v2.0.2
+git push origin main
+git push origin v2.0.2
+```
+
+标签必须与 `package.json` 一致。全部平台构建成功后，工作流自动创建 Release 草稿、上传 7 个安装包及校验清单，再公开发布；版本说明会附带 GitHub 自动生成的变更记录。`v2.1.0-beta.1` 这类版本会标记为预发布。
+
+普通提交和手动运行 **CI** 只生成 Actions 构建产物，不创建 Release；公开发布过的版本不会被工作流覆盖。此流程使用仓库自带的 `GITHUB_TOKEN`，无需额外配置个人访问令牌。详细操作与失败重试见 [GitHub 发布指南](docs/GitHub发布指南-20260923.md)。这里的自动发布不包含应用内自动更新。
 
 <details>
 <summary>📁 目录结构与截图复现</summary>

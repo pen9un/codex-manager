@@ -1,0 +1,103 @@
+name: 多平台构建
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows x64
+            os: windows-latest
+            platform: win
+            arch: x64
+          - name: macOS Intel
+            os: macos-15-intel
+            platform: mac
+            arch: x64
+          - name: macOS Apple Silicon
+            os: macos-15
+            platform: mac
+            arch: arm64
+          - name: Linux x64
+            os: ubuntu-24.04
+            platform: linux
+            arch: x64
+    env:
+      NODE_OPTIONS: --max-old-space-size=4096
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: 设置 Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: 固定测试临时目录的真实路径
+        shell: bash
+        run: |
+          node -e 'const fs = require("node:fs"); const p = fs.realpathSync(process.env.RUNNER_TEMP); fs.appendFileSync(process.env.GITHUB_ENV, ["TEMP", "TMP", "TMPDIR"].map(k => k + "=" + p + "\n").join(""))'
+      - name: 安装锁定依赖
+        run: pnpm install --frozen-lockfile
+      - name: 校验版本
+        run: node scripts/release.cjs metadata
+      - name: 运行测试
+        run: pnpm run test:ci
+      - name: 类型检查与生产构建
+        run: pnpm run build
+      - name: 生成本平台安装包
+        run: pnpm exec electron-builder --${{ matrix.platform }} --${{ matrix.arch }} --publish never
+      - name: 收集安装包
+        run: node scripts/release.cjs collect ${{ matrix.platform }} ${{ matrix.arch }}
+      - name: 保存本平台产物
+        uses: actions/upload-artifact@v6
+        with:
+          name: packages-${{ matrix.platform }}-${{ matrix.arch }}
+          path: releases/artifacts/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+  assemble:
+    name: 校验完整发布集合
+    needs: package
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: 汇总各平台安装包
+        uses: actions/download-artifact@v7
+        with:
+          pattern: packages-*
+          path: releases/artifacts
+          merge-multiple: true
+      - name: 校验文件集合并生成 SHA-256
+        run: node scripts/release.cjs prepare
+      - name: 保存完整发布包
+        uses: actions/upload-artifact@v6
+        with:
+          name: release-bundle
+          path: releases/artifacts/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7

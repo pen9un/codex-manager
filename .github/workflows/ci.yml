@@ -4,45 +4,15 @@ on:
   push:
     branches: [main, master]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  verify:
-    name: Windows verification
-    runs-on: windows-latest
-    env:
-      NODE_OPTIONS: --max-old-space-size=4096
-
-    steps:
-      - name: 检出代码
-        uses: actions/checkout@v4
-
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
-
-      - name: 设置 Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-
-      - name: 安装锁定依赖
-        run: pnpm install --frozen-lockfile
-
-      - name: 类型检查
-        run: pnpm run typecheck
-
-      - name: 运行测试
-        # Windows 用户临时目录可能使用 8.3 别名，与真实路径校验不一致。
-        # 使用 runner 的专用目录，不放宽应用对符号链接和目录联接的拒绝规则。
-        env:
-          TEMP: ${{ runner.temp }}
-          TMP: ${{ runner.temp }}
-        run: pnpm run test:ci
-
-      - name: 构建应用
-        run: pnpm run build
+  build:
+    uses: ./.github/workflows/build.yml
