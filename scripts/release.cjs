@@ -8,7 +8,7 @@ const targets = {
   'win-x64': ['Windows-x64.exe'],
   'mac-x64': ['macOS-x64.dmg', 'macOS-x64.zip'],
   'mac-arm64': ['macOS-arm64.dmg', 'macOS-arm64.zip'],
-  'linux-x64': ['Linux-x64.AppImage', 'Linux-x64.deb'],
+  'linux-x64': ['Linux-x86_64.AppImage', 'Linux-amd64.deb'],
 }
 
 function release_metadata(version, ref = '') {

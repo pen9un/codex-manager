@@ -33,6 +33,12 @@ describe('发布版本与安装包门禁', () => {
     expect(await collect_assets(directory, output, '2.0.1', 'win', 'x64')).toEqual(['Codex-Manager-2.0.1-Windows-x64.exe'])
     expect(await readFile(join(output, 'Codex-Manager-2.0.1-Windows-x64.exe'), 'utf8')).toBe('模拟安装包')
   })
+  it('接受 Linux 打包器对同一 x64 架构生成的 x86_64 和 amd64 文件名', async () => {
+    const directory = await fixture()
+    const names = ['Codex-Manager-2.0.1-Linux-x86_64.AppImage', 'Codex-Manager-2.0.1-Linux-amd64.deb']
+    for (const name of names) await writeFile(join(directory, name), '模拟 Linux 安装包')
+    expect(await collect_assets(directory, join(directory, 'artifacts'), '2.0.1', 'linux', 'x64')).toEqual(names)
+  })
   it('缺少任一必需文件或文件为空时拒绝收集', async () => {
     const directory = await fixture()
     await writeFile(join(directory, 'Codex-Manager-2.0.1-macOS-arm64.dmg'), '模拟磁盘映像')

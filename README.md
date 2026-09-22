@@ -186,7 +186,7 @@ Skills 按应用识别的用户级和当前工作目录范围扫描；“项目�
 | Windows | x64 | `Windows-x64` | `.exe` 安装程序 |
 | macOS · Intel | x64 | `macOS-x64` | `.dmg`、`.zip` |
 | macOS · Apple Silicon | arm64 | `macOS-arm64` | `.dmg`、`.zip` |
-| Linux | x64 | `Linux-x64` | `.AppImage`、`.deb` |
+| Linux | x64 | `Linux-x86_64` / `Linux-amd64` | `.AppImage` / `.deb` |
 
 文件名格式为 `Codex-Manager-<版本>-<系统>-<架构>.<扩展名>`。每次自动发布都附带 `SHA256SUMS.txt`，用于核对下载文件的 SHA-256。
 
