@@ -1,0 +1,65 @@
+{
+  "original": true,
+  "content_kind": "original",
+  "ai_generated": true,
+  "theme": "霓虹疾行",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case stylized-concept. Create a premium ORIGINAL cinematic anime cyberpunk illustration for desktop theme Neon Rider. One clearly adult female motorcycle courier, age27, short asymmetrical dark aubergine hair, expressive gray-blue eyes, tasteful fully clothed silver/ink technical riding jacket and protective riding trousers, gloves and boots, athletic natural anatomy. Standing relaxed beside a beautifully designed futuristic electric motorcycle on a wet elevated city roadway, one hand rests on seat, holding a plain helmet in other hand. Both wheels and complete rider entirely visible in right55%, face nearx76%y27%, bike occupiesx53%-94%y55%-85%. Three-quarter view with coherent bike mechanics. Expansive sophisticated future skyline after rain, silver fog and blue-violet architectural illumination, sleek depth and wet reflections imply travel and speed without motion blur on character. Left43% calm misty silver-gray road and soft city silhouettes reserved for later real UI. Bright overcast DAY design, clean luminous atmosphere, detailed cinematic cel-shaded character with painterly architectural background, elegant controlled cyan/violet accents. No text, no logos on clothes/bike, no readable signage, no UI panels, no HUD, no weapons, no watermark. Wide16:9 target3840x2160.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "f21da3bfa20c1806b7e7954a03274cf03b69da07f93a336c4aaac8f69206e29c",
+      "references": [],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/neon-rider-light-home-1280.jpg",
+        "screenshot_sha256": "5d5984e4e34df55a4c9375a999510d3b283d074426e1efb19d09a80c53533612",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Transform this exact adult female futuristic motorcycle courier scene into gorgeous midnight cyberpunk companion artwork. Keep same adult woman identity, face, short aubergine hair, complete protective clothing, anatomy, pose, helmet, bike mechanical structure, wheel positions and camera composition. Midnight-blue city, refined cyan and violet building edge lights, wet asphalt reflecting blue-purple neon, dark atmospheric river and distant towers, subtle rain haze. Face gently illuminated by pale blue key light with small violet rim on hair, clearly readable skin with natural tones; metallic bike has precise cool highlights. Left43% subdued dark blue roadway and low-contrast city haze reserved for later real UI. Retain entire rider and both wheels in frame, no crop. Cinematic detailed anime character plus painterly architecture, controlled saturation, new night lighting not dark wash. Wide16:9 target3840x2160. No text, advertising, logo, HUD, UI, dashboard, scanning effects, watermark or added people.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "1a70d36da39eccf76b7b29829cb7dd72d1dddff8d0c7d09cb974fd5b6b995ddb",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/neon-rider-dark-home-1280.jpg",
+        "screenshot_sha256": "363963a4b641c5bdd027cbacf3c54e98180208f4405f8813572e0c9344be0977",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/neon-rider.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

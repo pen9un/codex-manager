@@ -1,0 +1,23 @@
+/* 零日终端：哑光分区、方形控件、终端定位线，不伪造监控与扫描效果。 */
+:scope {
+  --cm-frame:#192e2b;--cm-frame-text:#e6f6ed;--cm-sidebar:#e1e9e5;
+  --cm-control:#f4f8f5;--cm-raised:#f4f8f5;--cm-selected:#cadfd3;--cm-chrome-line:#657e72;
+  --cm-radius:2px;--cm-row-radius:0px;--cm-button-radius:2px;--cm-line-width:1px;
+  --cm-marker:#176040;--cm-shadow:5px 5px 0 #a9bcb2;--cm-inset:none;--cm-row-shadow:inset 3px 0 0 #176040;
+  --cm-row-padding:7px 10px;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#091912;--cm-frame-text:#dff5e6;--cm-sidebar:#0c1a14;
+  --cm-control:#12251b;--cm-raised:#152a1f;--cm-selected:#203c2d;--cm-chrome-line:#6c937a;
+  --cm-marker:#a2e1ac;--cm-shadow:5px 5px 0 #040c07;--cm-row-shadow:inset 3px 0 0 #a2e1ac;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom:2px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="conversation"] {border-bottom:1px solid color-mix(in srgb,var(--ds-line) 30%,transparent)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"]) {border-right:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border-radius:0!important;border-top:3px solid var(--cm-marker)!important;box-shadow:none!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top-style:dashed!important;}
+:scope [data-cm-theme-part~="menu"],:scope [data-cm-theme-part~="dialog"] {border-top:3px solid var(--cm-marker)!important;border-radius:0!important;}
+:scope [data-cm-theme-part~="right-panel"],:scope [data-cm-theme-part~="panel"] {border-radius:0!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 -3px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="input"]:not([contenteditable]) {border-radius:0!important;}
+:scope main.dream-skin-home-shell > .dream-skin-role-main {border-top:3px solid var(--cm-marker)!important;}

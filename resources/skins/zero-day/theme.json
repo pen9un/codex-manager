@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-zero-day",
+  "id": "zero-day",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "零日终端",
+  "description": "真实硬件质感、清楚的边界与克制的绿色光，进入你的专注工作站。",
+  "tagline": "保持好奇，深入每一行。",
+  "tags": [
+    "黑客",
+    "终端",
+    "硬件"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#ecf0ed",
+    "panel": "#f5f8f5",
+    "panelAlt": "#dce5de",
+    "surface": "#f5f8f5",
+    "text": "#142c21",
+    "muted": "#3b5748",
+    "border": "#53705e",
+    "accent": "#19633f",
+    "accentAlt": "#19633f",
+    "secondary": "#19633f",
+    "highlight": "#19633f"
+  },
+  "dark": {
+    "background": "#0c1411",
+    "panel": "#111f18",
+    "panelAlt": "#1a2c21",
+    "surface": "#111f18",
+    "text": "#e5fff0",
+    "muted": "#b4d2bd",
+    "border": "#739b80",
+    "accent": "#87efac",
+    "accentAlt": "#87efac",
+    "secondary": "#87efac",
+    "highlight": "#87efac"
+  },
+  "layout": "terminal-grid",
+  "heroFit": "contain",
+  "heroFocusX": 0.75,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 440,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "sm",
+  "density": "compact",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "零日终端",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "保持好奇，深入每一行。",
+  "codexManager": {
+    "category": "geek",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "none",
+    "original": true,
+    "content_kind": "original",
+    "ui_revision": 1
+  }
+}

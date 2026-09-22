@@ -1,0 +1,51 @@
+// 使用空白临时目录验证真实主进程首次启动与加密持久化。
+const { app, BrowserWindow, safeStorage } = require('electron')
+const fs = require('node:fs')
+const os = require('node:os')
+const path = require('node:path')
+const assert = require('node:assert/strict')
+
+const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), 'codex-manager-startup-'))
+app.commandLine.appendSwitch('disable-gpu')
+const app_data = path.join(sandbox, 'app-data')
+const user_data = path.join(app_data, 'Codex-Manager')
+const bootstrap = path.join(sandbox, 'bootstrap')
+fs.mkdirSync(app_data)
+fs.mkdirSync(bootstrap)
+app.setPath('appData', app_data)
+app.setPath('userData', bootstrap)
+app.setPath('sessionData', bootstrap)
+process.env.CODEX_HOME = path.join(sandbox, '.codex')
+delete process.env.ELECTRON_RENDERER_URL
+const main_bundle = path.resolve(__dirname, '../out/main/index.js')
+process.chdir(sandbox)
+
+const timeout = setTimeout(() => { console.error('首次启动验证超时'); app.exit(2) }, 30000)
+app.once('browser-window-created', (_event, window) => {
+  window.webContents.once('did-finish-load', async () => {
+    try {
+      assert.equal(app.getName(), 'Codex Manager')
+      assert.equal(app.getPath('userData'), user_data)
+      assert.equal(app.getPath('sessionData'), user_data)
+      assert.equal(window.getTitle(), 'Codex Manager')
+      const run = code => window.webContents.executeJavaScript(code)
+      assert.equal(await run('document.title'), 'Codex Manager')
+      const accounts = await run('window.codexAccounts.list()')
+      assert.equal(accounts.success, true)
+      assert.equal(accounts.data.length, 0)
+      const result = await run('window.codexAccounts.getSettings().then(result => window.codexAccounts.saveSettings({ ...result.data, autoRefresh: false, refreshMinutes: 7, themeMode: "dark" }))')
+      assert.equal(result.success, true)
+      const encrypted = Buffer.from(fs.readFileSync(path.join(user_data, 'accounts.vault'), 'utf8'), 'base64')
+      const data = JSON.parse(safeStorage.decryptString(encrypted))
+      assert.equal(data.settings.refreshMinutes, 7)
+      assert.equal(data.settings.themeMode, 'dark')
+      assert.equal(fs.existsSync(path.join(bootstrap, 'accounts.vault')), false)
+      assert.equal((await run('window.codexAccounts.getSettings()')).data.refreshMinutes, 7)
+      console.log('首次启动验证通过：名称、标题、全新数据目录、会话目录、加密写入及回读均正确。')
+      clearTimeout(timeout)
+      BrowserWindow.getAllWindows().forEach(item => item.destroy())
+      app.exit(0)
+    } catch (error) { console.error('首次启动验证失败：', error); app.exit(1) }
+  })
+})
+try { require(main_bundle) } catch (error) { console.error('主进程启动失败：', error); app.exit(1) }

@@ -1,0 +1,23 @@
+/* 森林候车站：深绿站房顶栏、木质竖向封边、纸页和叶片轮廓。 */
+:scope {
+  --cm-frame:#274b3b;--cm-frame-text:#f8f6e8;--cm-sidebar:linear-gradient(90deg,#dbe6cd,#eaf0df);
+  --cm-control:#fbfaef;--cm-raised:#fbfaef;--cm-selected:#d4e3c1;--cm-chrome-line:#768768;
+  --cm-radius:10px 24px 10px 10px;--cm-row-radius:4px 18px 4px 4px;--cm-button-radius:6px;
+  --cm-line-width:1px;--cm-marker:#856b35;--cm-shadow:0 0 0 3px #e0e7d5,0 10px 24px #213b241f;
+  --cm-inset:inset 0 1px 0 #ffffffe6;--cm-row-shadow:inset 4px 0 0 #496438;
+  --cm-row-padding:10px 13px;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#152e29;--cm-frame-text:#f1f4e4;--cm-sidebar:linear-gradient(90deg,#1a302a,#253b31);
+  --cm-control:#24392e;--cm-raised:#24392e;--cm-selected:#3b5140;--cm-chrome-line:#9fae85;
+  --cm-marker:#dabd79;--cm-shadow:0 0 0 3px #344838,0 10px 24px #00000038;
+  --cm-inset:inset 0 1px 0 #eaf5ca21;--cm-row-shadow:inset 4px 0 0 #c1d59d;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom:3px solid var(--cm-marker)!important;box-shadow:none!important;}
+:scope [data-cm-theme-part~="sidebar"] {border-right:5px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border-radius:8px 22px 8px 8px!important;border-left:4px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="dialog"] {border:3px double var(--ds-line)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:5px!important;border-top:4px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {border-radius:5px 16px 5px 5px!important;}
+:scope [data-cm-theme-part~="right-panel"] {border-radius:0!important;border-top:4px solid var(--cm-marker)!important;}

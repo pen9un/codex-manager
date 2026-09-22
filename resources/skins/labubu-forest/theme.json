@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-labubu-forest",
+  "id": "labubu-forest",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "LABUBU · 怪趣森林",
+  "description": "卷曲蕨叶、柔软苔藓与顽皮的LABUBU，在微光中遇见一点怪趣。",
+  "tagline": "给好奇心，留一片森林。",
+  "tags": [
+    "LABUBU",
+    "潮玩",
+    "奇趣森林"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#f0f5e9",
+    "panel": "#fafbef",
+    "panelAlt": "#e0ead9",
+    "surface": "#fafbef",
+    "text": "#283b31",
+    "muted": "#51654e",
+    "border": "#687e62",
+    "accent": "#35614a",
+    "accentAlt": "#35614a",
+    "secondary": "#35614a",
+    "highlight": "#35614a"
+  },
+  "dark": {
+    "background": "#241c32",
+    "panel": "#30263e",
+    "panelAlt": "#3c314b",
+    "surface": "#30263e",
+    "text": "#faf2ff",
+    "muted": "#d6c7e4",
+    "border": "#a690b3",
+    "accent": "#dcb8f4",
+    "accentAlt": "#dcb8f4",
+    "secondary": "#dcb8f4",
+    "highlight": "#dcb8f4"
+  },
+  "layout": "split-studio",
+  "heroFit": "contain",
+  "heroFocusX": 0.75,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 440,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "lg",
+  "density": "normal",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "LABUBU · 怪趣森林",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "给好奇心，留一片森林。",
+  "codexManager": {
+    "category": "trending",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "float",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "ui_revision": 1
+  }
+}

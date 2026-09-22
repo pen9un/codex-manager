@@ -1,0 +1,342 @@
+[
+  {
+    "id": "fruit-base",
+    "original": false,
+    "content_kind": "user-characters",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "2236b42355efc3a92708fa33af978164b5da1b602e596b78efa4eccbed212cb0",
+      "hero-light.webp": "d2a9e78f461689a53f6f4abccc127b198e6604190c10d2d9ea6eb2798c35bca7",
+      "LICENSE.txt": "bc4f1e2b53928558841a3a7d9183c3d7acd989b50716b5cdc0889c2cd12d2c7f",
+      "NOTICE.txt": "2f2e522f7ecb705cbde5102aa6e2fdd8e9929a7a3218115b50cb5d3ed1610fd3",
+      "original.css": "99aab7e6390c35857c164ead438d60128b5fbd45310e35b7945840e6d0edee34",
+      "preview-dark.webp": "ac2589f84b0d4b2667c22f1d3feeba889aaa3ab65b921d8648c5772b0e23acbc",
+      "preview-light.webp": "4a650a78c49c19b7389a9e872ed6412952801e7f8c5896b294f9cc84bb80602d",
+      "provenance.json": "9e3ca5ab89f9f8750a9f96281ebaad75916faee29e005bd6bad11eadf5976fdf",
+      "theme.json": "ca95d1b0d4a274fa713124e7fa460ff8fac21623e3773c7dbe9e2f9d7e0df011"
+    }
+  },
+  {
+    "id": "lulu-duo",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "20c2ef43fac850ca435d71db436b8fc759c82ca1485e4d0f68de4a61b0446ff3",
+      "hero-light.webp": "a53cbffa62f6908b1fc8902e5a9d70b9d8f6ea32a5ceeac419ecf781d4e9fcf0",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "9bf17c397fc8a4b15f36c73bf00bf4b9ba72721e763803747689cee6a80da24b",
+      "original.css": "74e1cac26dc9cb4eac326f2002c24131ec190411360a0c0d65517ad404570943",
+      "preview-dark.webp": "ffd5ea072993d7b6d8689d863075f81609528f07780080fbb949ff8bff255c9f",
+      "preview-light.webp": "9c6b39565fcccf7f46ef6841d4ff7ce1d07836bb24c9e966a081b248685e3a1b",
+      "provenance.json": "5af8e04b3966214f55402e82bd21a97d333b2ccea9345ebbf4420b873dce645e",
+      "theme.json": "043dcb7a20040acda8ed9093b70c8765a36678a16d656ea47e9ad534b16b717c"
+    }
+  },
+  {
+    "id": "chiikawa-camp",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "b971d6f26ec9195aa01ca21f09ee81401f98dbed6eb352134a79dfcd4b4e82c4",
+      "hero-light.webp": "6a17e50998bdb8eb0392ec9e4f683aa406c5a3716db0359dd77f823b6ee9fe2a",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "8dca0415117a8b85b8e5b6b1d01b2774c033a27f5c5d6d455a63cbb441cdb514",
+      "original.css": "e23d84470dcfd636917154743333f91002e89bdd6ce8ce1efddc00e914f56825",
+      "preview-dark.webp": "9352613825076e72bed9a5638998ba6a8d4c9442d48173cd0bede87512c4b68d",
+      "preview-light.webp": "d4d78387aeed0f31ee07e61632ccad67f96c797f2848e02941c848f4f095982c",
+      "provenance.json": "2e1a56dc014624914a348648b6977b7f0930adb8fc2cf98c4ed6c4fbfd90ad25",
+      "theme.json": "ff5ad461473b2b1bd59baa0499d3d8d0ac4081375d1845565510192cbd3eeab9"
+    }
+  },
+  {
+    "id": "labubu-forest",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "5adf20c9bbf2017babd5a942bef6d760a0e711d50d66bb72de05ff5436b87e31",
+      "hero-light.webp": "bef885f8f96ea53e878c29ed38db3e9d7347edb9d6ff0191e17b4972ac0cd286",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "ef6749c4453622ea50fe6833d64810ae3007098bb524ee9a903c19080801ffda",
+      "original.css": "d10ed3ed28aadc3f71bf2f481264bb12cec049769753e50732df7124bf19a5b2",
+      "preview-dark.webp": "0b7db00fd328a37e8f413980ee6a31a878d3903c9474fa65a90580c789d4a726",
+      "preview-light.webp": "59c1b01a5e86653992ed1f2ac14d67c0af94a623696ba128cdf165ff07908698",
+      "provenance.json": "4cfe2fdc84154d149d6b749fbc6935a346efb4c1e2717889fff0f4f2476840c8",
+      "theme.json": "df2a6e12527bf76aa12047194f68b71dbea2f45e9c99496b2515fe63f1fd5732"
+    }
+  },
+  {
+    "id": "totoro-stop",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "1005f1d9d408d72bff869ff3a0044eda4296e6bb77b7a4668e70974fe594108a",
+      "hero-light.webp": "685442b2527482f359b66e04a92326b5bb8e385370970e0df38a7bc97250f2e8",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "4de33f4eab93a699d98a52f0842f12fe24320072fccfa1eefe53c4d556a44241",
+      "original.css": "a83c33de579b9e9ce347316855ea9d381ad6fe2b8bd99ccb9b0aff82edb3e26a",
+      "preview-dark.webp": "3a078842c5951cf135721dda5a799c94980a46767ca382a60c3672fb31ec5901",
+      "preview-light.webp": "a32a3752fb5c40cc057c7a59ed26666319ddf08ee00540a8a4f20567a8153102",
+      "provenance.json": "a626c28082a7f6480fdf62011a5888957c00ba15e3114999ee79d7092a27c57e",
+      "theme.json": "f689bd97b8ec96990285ab01e898ca39cf2df2d6df38711aa6efc04d155147b1"
+    }
+  },
+  {
+    "id": "sea-train",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "c1ab9088f134134a822f0ada5eac5af72029516ed3464eddf7dc0763ce89860c",
+      "hero-light.webp": "0f98e905e77c3f5ccfa12e3b3f78e5166d18d46e79f61236a1b34d7e686dd918",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "f8c3b29986d8adc1e8bb391c2c704b08afc39a94b91bdeec645a4d8802bc2fdd",
+      "original.css": "2a305dd4fe09f2e3ddb56002ebb66c82aac1a2a4543909580cac4821aa10b4a1",
+      "preview-dark.webp": "a21bed53b35fa80b43b17610f77649b828562c18acc786eb91c89373244431b1",
+      "preview-light.webp": "f781a54ed4f7c3752cf91913c98cf0b609c867248e4f7f614589deecad938abf",
+      "provenance.json": "dff3bf3b39cd416cb14d691c9d9c94e91eeb8bef57f23d907803a7b4f2ca3cb6",
+      "theme.json": "eff51ae7bfe62c68db1c1415b374d5a7158184465f30d931ff583e4222146af0"
+    }
+  },
+  {
+    "id": "cloud-castle",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "a60e7e9faba6db0a2b1f9c08f8159f3dc38a9d01855a783b51a41d554f37904c",
+      "hero-light.webp": "7e2ff139f3bce0fea77e9fe9264ef45ad47129550a8eec15aff4415829e4e4d8",
+      "LICENSE.txt": "eff1811839101d0048957f9f3644c84c33760626cc25412eeb511d6bb3eaca66",
+      "NOTICE.txt": "2f3ba5304e06fdae67c828720bbce5c475760f76465801b2db064d73e0ed1526",
+      "original.css": "6c7d8de2a73ec8721dc5aa8203a6f9489c60d47740f40cf9359676a5286d95ef",
+      "preview-dark.webp": "6c8bd8cdd8247340d70d94d04e557e973e1cbd043f027e2487cb4fd64b69f6c3",
+      "preview-light.webp": "b914845d11b6c904b8cc1ab18b9c905960aa3c73833bedaaa2f163fb70e69c52",
+      "provenance.json": "7f11ab29a6f8b5add71e082673935f462b6f939db71b03eba8188511d28a2d65",
+      "theme.json": "101564fc8f2a18b48ecdb18ebd7679bec4609dc061163297ea9631ade2c40e1b"
+    }
+  },
+  {
+    "id": "pixel-studio",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "38607a3c7c870e59572db27ec829ebab83d5efc2046c8b8c52775187dd8b0d9b",
+      "hero-light.webp": "a2b022874fec67d896eeaff08c1e7362fec583d398c19fe012bc44b57a478451",
+      "LICENSE.txt": "700c78e1d9081587314d93b9ad56e5e2dad7048587c2622f52925e8edfae1c58",
+      "NOTICE.txt": "b3c163d54fd69a3a9e4ef884885c0e8bc67488b67fb22893fc6ec49364616167",
+      "original.css": "39f2ec8d442e303af53c228706ad3793231e7b12cd1ca5d5c3405d291e27a71d",
+      "preview-dark.webp": "8c0f78ed507feeb28bb06fc6624788f0f885b21d6a922f9378765736d95e4724",
+      "preview-light.webp": "3c5cc9b7c40a6dbc161f385e9a86fa094e2d07b74e6fd170badf0bf28a1f73c6",
+      "provenance.json": "bd312ca0c0733424e29b2baeb68882d0c7675b1ebe74115110bab02253f7e8d3",
+      "theme.json": "961de86807a3b4d0e3f83abecc06b90b7485385304253ff7f619b3a64ba1d955"
+    }
+  },
+  {
+    "id": "crystal-core",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "30061053f0590d42ac1e904be591ee9b33d4b6e7834b2ff3c1b1c9fc9a123a80",
+      "hero-light.webp": "6c4dc7f0e44bbcf6985122a35f744e5ea1bb666fe0ae6244039f1f4ade8790a0",
+      "LICENSE.txt": "700c78e1d9081587314d93b9ad56e5e2dad7048587c2622f52925e8edfae1c58",
+      "NOTICE.txt": "5de75fd8df73547a90f9e4f32af46e0591be7a336affebb9c1243c16c9a6aa44",
+      "original.css": "178c0e9e9a3f12f1803f28caf9132435219bcae3ab913194e1015f8b93ed5e64",
+      "preview-dark.webp": "3fec9ce4ad64eb570b2ff85a5232ecc9750b61a4152c66fab386794e78341b96",
+      "preview-light.webp": "e6b43d8fca69e283050fc7d31f5c6ff660557a2e20c9a614d03ddbfe84ee430e",
+      "provenance.json": "4afd4dee784e577441333f850a1c649403411a49eff6bfe6850a5c0951c4b9af",
+      "theme.json": "755d5675ec12f83c868b98f24b07df9906fa763f3fbdf53b77fd2dd86876ada0"
+    }
+  },
+  {
+    "id": "zero-day",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "257714f2061ae0870adf67520c7b018fc2423fbe769c2bc4afa5aff050411362",
+      "hero-light.webp": "5230b919f8d434550377f197636ec3591b93726431e42c53c49d7b60ed0c76c1",
+      "LICENSE.txt": "700c78e1d9081587314d93b9ad56e5e2dad7048587c2622f52925e8edfae1c58",
+      "NOTICE.txt": "94a84a1f65a831afb0e869f1897e9bfade7c8aae771c18d49d2f2b2d3337e48a",
+      "original.css": "0f4379bf618302893714d277765441c4d8353eea2505977d1eebde3f1a8f97bd",
+      "preview-dark.webp": "d8edb9d86a60dc1fac764197ae67777f079a8255750b366ed119b2a75581e854",
+      "preview-light.webp": "4f2044d670ee7b202f8351b0646a7ce2796ca850ef1a4a3c4e9851ced436e410",
+      "provenance.json": "6061cfba6fafc886d35c6ea3aade7ef8868a8770ffff802d2aa7363787b86c9f",
+      "theme.json": "27c2b1ea952d20f0282724e02e03ee034c41d9215875743e2fde47823d209e8f"
+    }
+  },
+  {
+    "id": "neon-rider",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "6fcc874d9081301d2c40dd7839a2948fa4c30b874cb517abdf44f5154e62c67a",
+      "hero-light.webp": "d781b13b040b8d3bce0cfe8fef01d67724f8e6e9c1d8e1469015dd427f509e21",
+      "LICENSE.txt": "700c78e1d9081587314d93b9ad56e5e2dad7048587c2622f52925e8edfae1c58",
+      "NOTICE.txt": "57e94b0aa4a5030dfdf93f26c43f409d723955154e1ec9dd5b226d475378bd26",
+      "original.css": "52323c21d505bd3d6fc24ae4e922dccbae92e9f709dba3ecefc3b559747f91cb",
+      "preview-dark.webp": "d3edf1e27638d7bc01093dfa25d3eaf79e0f385a7c5ad23a56a4f20496b73a24",
+      "preview-light.webp": "0c70c0ffb3b61ae00bb0e332fa880e2a943660dc0da4afcc9e426ce253939613",
+      "provenance.json": "5a020f8b508dfe6d8301a48be53a4a494e22509fb09b45f79ec4e207df185abd",
+      "theme.json": "d2cf97855d9d5d12650ddcb17122c2e18a72da24ac1b46620512bd8392c81c1e"
+    }
+  },
+  {
+    "id": "pine-retreat",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "c42fa26cbebbf137d7db0e23c4a22b03650452d1a945d16dc669cdaf9e617c03",
+      "hero-light.webp": "42805926c5cf743e5a3e659d93f52a2b8afbb8fdc872eeaece1bf3d7b7fd6ce4",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "8836dd4af903e2cb74378e82187af2e73cbe8bb91053df2d3fa23f876ca6aed5",
+      "original.css": "dfb75ce92ca5b9844d211a3a70926920a15f2f9ab63836b89437fcda96e3543b",
+      "preview-dark.webp": "f24aeb3c246d4918503a93770c2a792e6227d9edbf1455304ecc39f4a5007035",
+      "preview-light.webp": "921c23691bafc6095cd0cd781db56254ca0e6cceef9ac1e89c9f49b72b108a7f",
+      "provenance.json": "b4949dc5c892f7a1aa333a8e4d24c22febc60aa3b8b444d74658dd114e9bc9ee",
+      "theme.json": "dae1f8b1f1c1157e069df05b21da73d35b65b9983e26d82eaeff3abb3dfdb613"
+    }
+  },
+  {
+    "id": "tidal-letter",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "dc157651e8c13db13a66f0505336603de64887cfb778d3b717a734160015f59f",
+      "hero-light.webp": "4b7a671766c6a019634815fa664fe78b77cae958bace4116b0754fc31c7ee5ac",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "7184470ff3a6cf3047e21ff2cfc5b822a0e4c4dd8c064d0839e50be1b79f996b",
+      "original.css": "aad6158e15e4ecae4e0482b1f6dfdbd828c1f9e7676451c0d98eb84902f4354a",
+      "preview-dark.webp": "16ff25448aa65ac2f8f3309ae768e7c578bfebf975467a58d7578f8d4ba21fbc",
+      "preview-light.webp": "e906c2f2a796355c114abedac104787da7a021a1557b69cb76d21d2e55886a7e",
+      "provenance.json": "355d9e37730ff7ed4a669277bf3d3f62343376449b30953856e35bcd445b6c94",
+      "theme.json": "d11d489475d4ddd204a6df0be0459c11eb5e6d32dc94a4b838204ccc0a739334"
+    }
+  },
+  {
+    "id": "ink-landscape",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "cdc802e5afbbbfb580b3f13df5a164f3b306b7734a246811d5ed85a97feb1d71",
+      "hero-light.webp": "efd25715b6d31bb6e30d478ed6836f43a695abf87606654399bb32a2a83da95e",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "59ccdd36f195b151358f7de103253b684a6c69c39d6e3b7b4a92eb4329b20101",
+      "original.css": "c8000649145aa48b2e055c3888fc7dcb1ba9e292562b3afd1afe739204221e03",
+      "preview-dark.webp": "0f975de0e0c293dd97a8f702a4366e2613ea6f53811af4ad1b7d19d8d9bc7d14",
+      "preview-light.webp": "0cb9ea5b325e7845732a2dd8415f0b3e36e98135dafcbf40a490b788cc49f1e0",
+      "provenance.json": "282d3a532acb4add08b2a905d7defd7c81a495f65252dee4be06e6745dfe8bad",
+      "theme.json": "21a15a1a58240f7e1de1d10449de427bba3fb702495ab0c715f0077f58d982ab"
+    }
+  },
+  {
+    "id": "orbital-harbor",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "25e15941f6f39cc31a1c8a7e3ab3b1a7759db040a66549cf01f00e4901d929bf",
+      "hero-light.webp": "db12c1d018b09a67ea77b8a87bd34fe886f47d418ce349bccbae258da35f28f5",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "68d0b4cd4c50f4e5caa6ae20f50b0d0d7aafdc0b942d91eb0dd1b1ef0f18e799",
+      "original.css": "370882c3f975146e8d5eadd6ce0204f3aea267cbc246d2d3af682d350f59c8db",
+      "preview-dark.webp": "0bfc916d684f9f7ed66bf412748993b0fa1c6162fb862819922aee2e2530556d",
+      "preview-light.webp": "83e091f087da21b2ef61bac5ce9e4e21cd495b311bb52f28349bc76a0bb0bb02",
+      "provenance.json": "cce03e546f670bb6f20e96e36fec4ee11352b4d1beab3d61a253ef963ef3a64e",
+      "theme.json": "e2857174b9f3b7413bc9135fac0da7f6d23405017a9785af3a8beb164aa7fa27"
+    }
+  },
+  {
+    "id": "neon-rain",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "5b73efe9b36d0fc649943a937a13e6f4c920661658d017efc84177584dba936c",
+      "hero-light.webp": "e95e89801c6426bef4737222e68b1397bfc32070c014d19087848b7ced965e23",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "10906ea83d8b0955a7da3146429fcc4891265fcce85a025c7bb57515d3346fff",
+      "original.css": "57390089e17cb90795de9de1dbdde47bd55a42abb0a206f0df7f240370f7013c",
+      "preview-dark.webp": "3dacfddeec33016ddb943155717948bb29824e46ffbe22a8d1761d07ebb5df1a",
+      "preview-light.webp": "b2870fc5a06979e46e76d59bcdae566c135ba50b15446114a3ce778f26844b25",
+      "provenance.json": "d9fa60b79a71d6f4c3651c1316ec4bf011473b15f1e79a90d41ef97bc1013121",
+      "theme.json": "7b75a3be8fb793c9d27a078073b76b163e850469b3e9462972bd43c78c92fe50"
+    }
+  },
+  {
+    "id": "floating-courier",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "d95fac8b5bd4f26f5573b30d30453989d4b8f80f669360c33ed2db2dbd234485",
+      "hero-light.webp": "6efbd4f8af603a7bc42151e164e3739aefe7f12448e93657d2abd0e95e9f8c5a",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "5e3a3a2c49b23526c0fc87862b900d1978dddff1193c8461cc8b380e4290b669",
+      "original.css": "fdf2268d4cdaa0830051d2d631def0c463bcdce0c1bb57e26a965a3a2c3c772b",
+      "preview-dark.webp": "33267d70278fb98d10767af0128d70c9034be1fe0b4cf63145a998841f047f5c",
+      "preview-light.webp": "5a166e089ced1cc16508aebf5d7fe2363c6ba134d9524a2bd06729303658101a",
+      "provenance.json": "d6a41c1ac9900d90320de86d875912be3f8e1d1de35e7c8a17ffa6bba1ef4cc4",
+      "theme.json": "94c977220fb7ca6126332f630c99d4f73d3bc8214e2109bdd0ff92d22910158b"
+    }
+  },
+  {
+    "id": "cloud-cottage",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "9a17bd7999ef730515127a3773b4bf2ac0cb53efe9ffb1d6560b5f7eb01d4157",
+      "hero-light.webp": "b1f6c80e0baed081f3929a0ebd3b85ed8220dacee4a69bd14e80a2a1065bd3fd",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "a1bcbee2fbd213a8618de35af9ff56eaffb7144507bf288f4fdfe3b94d5f45f7",
+      "original.css": "cdf8d0145ee18206b78961a1ae9b7b2b9ad77e7454998c3e9a4b8c0dbb6e9a37",
+      "preview-dark.webp": "37888f52e1bbacc996dde76543e8bdaacc9eff83bd184ac3242ad46da40e0d1f",
+      "preview-light.webp": "4b63bd41c5af5f21e28b704ea20d14955f3cbfaf244a97173b9a9b90ed736321",
+      "provenance.json": "f792712f970bd49ae0386c2b2ffb9ecf5a6ca36784fa22f5d619f042379e8975",
+      "theme.json": "ef74451491752cd9b178800d4ffade02b3f942f8b321f608b073976ea8f1eb20"
+    }
+  },
+  {
+    "id": "skyward-journal",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "2551577049a870440fd7b81dc5a67b877e29924fe99077efc039c0f10513eb69",
+      "hero-light.webp": "6a4cf7a97de098508c61ca14cb8116014d5ce611ef14a41c76dea48f188fc9fa",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "e7e31959f633aadb91551101b6f149b486185e7cb01ac00f307e879182c2282d",
+      "original.css": "fbe8d1f9e96b3cc6a2d31b2a8b9ab811e020fc3c12f1b93df06e9e6c79f80404",
+      "preview-dark.webp": "39838e84bf41eca6cc9148ca3abf2e8c40f266141d69fa97c92265f367c147de",
+      "preview-light.webp": "5e6d9673ff5f38be0c63c5ac0df39070945bbbf7c6285dc96345a79062dc925c",
+      "provenance.json": "80246b1bc3fd1dd283ba24c5809f239bc67c4258aacde83f29a984b080b20938",
+      "theme.json": "fc9ab8e1ef67c8585faa6f20ab56b61a62c7c200f242d893c4959a1790da7077"
+    }
+  },
+  {
+    "id": "moonlit-serenade",
+    "original": true,
+    "content_kind": "original",
+    "version": "1.1.0",
+    "hashes": {
+      "hero-dark.webp": "663950c065fe3a49060010d674cb86642bd473d0b26fdd29cb6af31279cc2e60",
+      "hero-light.webp": "0476dee22ab8840317aaac5433c7acd40b58edc02c3df057362ea0e2f277cc6f",
+      "LICENSE.txt": "bd2e322f4d6e98f0022a40e13d9b8bac67d093c999ea69e0e138df4e339fd421",
+      "NOTICE.txt": "073e166170669cdd57d70a80d2a28b38af673998255adf5d060c42b4c425752f",
+      "original.css": "5c49bac1a1552c89a18ef82453bb6ed5230111725c08fd2447923f4f4a1943ad",
+      "preview-dark.webp": "0d12ada10c99c40b2a350a8179f6863c1a6e563ed21ef9b05f33fd02f4e811db",
+      "preview-light.webp": "3b45927786b856cc38908b59141b2540cd29ca2581411c74b197237bf522c6b8",
+      "provenance.json": "c9bbb8b79e688ad30911d4f23079188475346f1dcba2d873a0ad1fc7d2c7c632",
+      "theme.json": "97d2dd861d2d299f3202be51eded6c4f95e9144b561b839cc58a12d22d5e1bc2"
+    }
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "original": true,
+  "content_kind": "original",
+  "ai_generated": true,
+  "theme": "透明机核",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case stylized-concept. Original premium industrial hardware artwork for a geek desktop theme called Crystal Core. Ultra-refined photoreal 3D product scene of a sophisticated compact transparent computer tower with cut crystal acrylic outer enclosure, machined silver aluminum frame, visible precisely arranged blank silicon chips, layered circuit boards, braided cables, tasteful cyan edge illumination and polished liquid-cooling tubes, two architectural ring fans. Slight three-quarter isometric camera. Place the entire single tower at right x=58%-91%, y=12%-85%, sitting solidly on a pale silver workbench, strong object scale and beautiful contact shadows. A few tiny unbranded hardware components near its base. Full enclosure entirely visible, no cropped top. Left44% clean spacious pale blue-gray studio with quiet depth, reserved for later real interface. Bright soft daylight, restrained cyan glass refraction, satin metal microtexture, physically coherent exquisite hardware design, crisp craftsmanship. No text or marks on chips, no logos, no labels, no monitor, no screen, no user interface, no HUD, no diagrams, no watermark. Not a generic floating abstract object: believable assembled desktop machine. Wide16:9 target3840x2160.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "24ad00c5b867c3f58ed51febca8b78bfea752319f9ec96426e098ac625f97588",
+      "references": [],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/crystal-core-light-home-1280.jpg",
+        "screenshot_sha256": "0046c085a93f9dbbd6cc258f25d1adfe2e72cff0c0b5f94683dedf735e50cf46",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Re-light this exact transparent computer tower product artwork for a dark-mode hardware theme. Preserve entire enclosure, machined frame, ring fans, tubes, circuit layout, hardware components, full object framing and camera position. Set studio and tabletop to deep charcoal blue. Illuminate internals with precisely controlled electric-blue and cyan edge strips, cool silver rim light on crystal facets, a soft overhead key light to retain detailed circuit visibility and convincing reflections. Left44% calm near-black navy studio, no bright haze there. Sophisticated museum-grade hardware photography, no rainbow RGB, no washed-out white surfaces, no labels or interface. The machine is physically grounded, no floating components. Keep same composition and identity, redesign lighting and reflected material colors rather than global filter. Landscape16:9 target3840x2160. No typography/logo/watermark/screen/UI/diagrams.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "7f8ae8c7984afcba29b0a362485a31e34e4912810f5e16d1b6e16bf1f479de4a",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/crystal-core-dark-home-1280.jpg",
+        "screenshot_sha256": "ace496c5c6cb90d9404d7a0ab5c89480e3484e5bde50e184fc7f75c06143b786",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/crystal-core.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "original": true,
+  "ai_generated": true,
+  "theme": "月下弦歌",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "原创成年男性音乐创作者，28岁，优雅成熟东亚面容、短黑发带一缕银灰发束、深靛宽松衬衫、银色小耳环，持木色旅行吉他，手指结构自然清楚。人物放在画面右侧三分之一、腰部以上，远方简洁现代城市天台，白昼将尽的月白天空与浅靛都市，淡淡可见月亮，原创高级二次元电影插画，克制线条、柔和层次、精致材质，沉静有音乐感，绝不模仿现有角色。左侧60%浅月白低对比天空留白，用于后续叠加界面但不要画界面。横向16:9，4K目标，无文字、logo、UI、水印。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "6667b13f978f18873ee771b6e8d18d937def2fe622d60b2dba36e94fbb9c36b0",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/moonlit-serenade-light-home-1280.jpg",
+        "screenshot_sha256": "b83d265add062a90079c8a752b4b25caf5ef556be4b77db5115081e8e204e631",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "文本生成原创图像"
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "将同一原创28岁成年男性音乐创作者重绘为城市月夜深色版本：完全保留面容、黑发银灰发束、银耳环、靛蓝衬衫、木色吉他、自然手指姿势；银紫月光勾勒人物右侧轮廓，远方城市窗光克制，深靛天空与电影感照明，角色仍右侧，左侧60%深靛安静留白。高级原创二次元画作，非任何现有IP。无文字UI水印。横向16:9，4K目标。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "63637ca2c29534f3a3ad25f03611c839ab6d1894fcf044e1397c18ae979d41bf",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/moonlit-serenade-dark-home-1280.jpg",
+        "screenshot_sha256": "cd27843a3b26bc6bcee8a44cb5f0e893d2aab18d96511d68a794c7ec52a289b1",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "参考同组浅色原图进行 AI 重绘"
+    }
+  },
+  "preview": "由同一主题渲染引擎的隔离示例界面生成；不是实际用户会话截图",
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/moonlit-serenade.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

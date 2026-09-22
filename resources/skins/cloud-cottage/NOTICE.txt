@@ -1,0 +1,4 @@
+绒云小筑 · Codex-Manager 原创主题
+图像为 AI 生成原创素材，不使用第三方主题的图像、角色和文案。
+底层主题引擎沿用 codex-themes，相关声明保留在应用许可证中。
+.codextheme 基础字段兼容 schema v2；其他工具可能不支持 codexManager 明暗素材、样式和动效扩展。

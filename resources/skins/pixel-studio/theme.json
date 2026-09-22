@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-pixel-studio",
+  "id": "pixel-studio",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "像素开发部",
+  "description": "复古电脑、小机器人与明亮工位，用像素世界的秩序开启一天。",
+  "tagline": "一格一格，把想法变成现实。",
+  "tags": [
+    "像素",
+    "复古电脑",
+    "机器人"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#f4efdf",
+    "panel": "#fff8e8",
+    "panelAlt": "#e6dfc9",
+    "surface": "#fff8e8",
+    "text": "#28353b",
+    "muted": "#526163",
+    "border": "#6b7b75",
+    "accent": "#235e6c",
+    "accentAlt": "#235e6c",
+    "secondary": "#235e6c",
+    "highlight": "#235e6c"
+  },
+  "dark": {
+    "background": "#172430",
+    "panel": "#20303f",
+    "panelAlt": "#293d4b",
+    "surface": "#20303f",
+    "text": "#f9f0d9",
+    "muted": "#cbd3d4",
+    "border": "#99aeb8",
+    "accent": "#edc07b",
+    "accentAlt": "#edc07b",
+    "secondary": "#edc07b",
+    "highlight": "#edc07b"
+  },
+  "layout": "terminal-grid",
+  "heroFit": "contain",
+  "heroFocusX": 0.75,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 440,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "sm",
+  "density": "compact",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "像素开发部",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "一格一格，把想法变成现实。",
+  "codexManager": {
+    "category": "geek",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "none",
+    "original": true,
+    "content_kind": "original",
+    "ui_revision": 1
+  }
+}

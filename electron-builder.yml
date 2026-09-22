@@ -1,0 +1,34 @@
+appId: io.github.codex-manager
+productName: Codex-Manager
+asar: true
+compression: maximum
+
+directories:
+  output: releases
+
+files:
+  - out/**
+  - package.json
+  - resources/**
+  - from: src/shared/vendor
+    to: resources/licenses
+    filter:
+      - '*LICENSE.txt'
+
+win:
+  icon: resources/icon.ico
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: Codex-Manager-${version}-Windows-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Codex-Manager
+  deleteAppDataOnUninstall: false
+

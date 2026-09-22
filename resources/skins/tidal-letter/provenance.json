@@ -1,0 +1,59 @@
+{
+  "original": true,
+  "ai_generated": true,
+  "theme": "潮汐来信",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Original premium art for a desktop theme, landscape16:9 target3840x2160. Pure artwork, no letters, text, logos, watermark, UI or picture frames. Asymmetrical exquisite composition, left half gentle quiet low-detail negative space, main visual to the right. Tidal Letter LIGHT. Fine-art aerial-oblique coastal photograph, sculptural white limestone rock shelves on far right, translucent turquoise shallows curling into fine white tide lines, pale mist-blue horizon and calm water occupying the left. A few delicate wet sand reflections, serene coastal light, sophisticated ocean palette, natural detailed rock not clutter, luxurious travel editorial craft.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "e5adaa245d7642d78b8b49da7a679d9deed30ec33b5945a0057717b4d235c7b0",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/tidal-letter-light-home-1280.jpg",
+        "screenshot_sha256": "8e594a21814ae3889d7e2393913a8b6f10cfa6ddc9bbf45bc4538ff9a680cb55",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "文本生成原创图像"
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "将同一原创海岸构图重新设计为深海蓝夜景：淡青色潮线，柔和月光与海盐岩石，右侧海岸有细腻通透层次，左侧低对比深蓝留白。不要文字、标志、UI。横向4K目标，保持构图身份。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "420ff8e1d3ba41852b3d7a3eb7390a851a27fe027eb5a62c8adf44b003317ab5",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/tidal-letter-dark-home-1280.jpg",
+        "screenshot_sha256": "d2d857cb4faeb413955cbaf29daf452defcde3cb40e344245e2952765a8a6d2a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "参考同组浅色原图进行 AI 重绘"
+    }
+  },
+  "preview": "由同一主题渲染引擎的隔离示例界面生成；不是实际用户会话截图",
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/tidal-letter.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

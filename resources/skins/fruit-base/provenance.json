@@ -1,0 +1,71 @@
+{
+  "original": false,
+  "content_kind": "user-characters",
+  "ai_generated": true,
+  "theme": "小果与大果 · 并肩小基地",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Create a premium original wide landscape desktop theme artwork, 16:9, target 3840x2160. Use BOTH attached character references: reference 1 is Xiaoguo, reference 2 is Daguo. Preserve Xiaoguo's round navy-blue body, huge glossy blue open eyes, white eye patches and oval belly, tiny gold beak/feet, TWO glossy head tufts. Daguo is 18 percent larger with broad white face mask, SINGLE short tuft, cheerful winking eye and smiling golden beak; convert his hand-drawn reference into matching beautifully polished soft 3D toy rendering while keeping his distinctive face. Show BOTH fully visible together, close enough to feel a duo, in RIGHT HALF of image: Xiaoguo on left operating a small physical blank-button maker device, Daguo to right holding out a little golden spanner and waving, joyful collaborative interaction. Build a delightful miniature floating blue-and-white workshop base with curved glass window, a tiny plant, blue spherical lamp, tactile white ceramic and soft resin materials. Early morning sunlight, baby-blue sky, gentle distant clouds, believable soft contact shadows, cinematic physically based 3D animation-film quality. Pair's faces centered around x=73%, y=43%; both entire bodies inside x=52%-92%, y=20%-80%, fully framed, no cropping. Left 43% is calm atmospheric pale ice blue studio wall, subtle meaningful depth, room for interface later; right half detailed but curated. Charming expression, flawless anatomy, polished art direction. Art only, NO text, logos, app UI, panels, windows of software, buttons of software, labels, screenshots, watermark. Characters' bodies should be round penguins without human fingers. Keep both characters visually distinct, not two scaled copies.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "0130c4c3726baf09c86298687f6ff7a7498b82785f1783192938872e131fbaed",
+      "references": [
+        "用户图2：小果",
+        "用户图3：大果"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/fruit-base-light-home-1280.jpg",
+        "screenshot_sha256": "cf93d4bdbe9ccd70d1ba34a8c64c29d40452058d038fccbb3a36cf996f51d2e6",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Re-light this exact penguin duo miniature workshop composition for NIGHT, preserving both characters identity, sizes, poses, positions, facial structures and complete bodies. Xiaoguo left with huge blue eyes and two head tufts operates device; bigger Daguo right with broad white face, one head tuft, cheerful wink and golden spanner. Same refined blue resin/ceramic 3D quality. Deep sapphire sky and gentle distant stars through workshop window, soft warm golden work lamp on their faces, blue indirect underlighting on the floating base, beautiful believable shadows and carefully controlled luminous accents. Background left 43% becomes elegant deep desaturated navy with soft subtle ambient light, not featureless black. Keep white bellies luminous but softly exposed; preserve both faces clearly. Night materials rich tactile, not a flat dark filter. Wide 16:9 target3840x2160. No letters, logos, interface panels, software UI, watermark.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "f5bec3e3ecf570ff23ddb67300b9b16e4acd8db0a6e7e87ec95e1dc9929da599",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/fruit-base-dark-home-1280.jpg",
+        "screenshot_sha256": "4f660e5f14f5a97ad3142c0ff0513fae87c9b58dc6a6e83adff5d2a3c59db8d5",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "用户图2：小果",
+    "用户图3：大果"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/fruit-base.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

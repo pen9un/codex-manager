@@ -1,0 +1,26 @@
+/* 像素开发部：方格硬边、阶梯式选中和实体按键；保持原生字体与布局。 */
+:scope {
+  --cm-frame:#e9e1c9;--cm-frame-text:#28353b;--cm-sidebar:#f0ead8;
+  --cm-control:#fff8e8;--cm-raised:#fff8e8;--cm-selected:#dddcc4;--cm-chrome-line:#5e7069;
+  --cm-radius:0px;--cm-row-radius:0px;--cm-button-radius:0px;--cm-line-width:2px;
+  --cm-marker:#235e6c;--cm-accent-ink:#fff8e8;--cm-shadow:4px 4px 0 #5e7069;
+  --cm-inset:inset 2px 2px 0 #ffffff;--cm-row-shadow:inset 4px 0 0 #235e6c,inset 8px -4px 0 -4px #235e6c;
+  --cm-row-padding:9px 12px;--ds-line:#5e7069;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#213240;--cm-frame-text:#f9f0d9;--cm-sidebar:#172430;
+  --cm-control:#20303f;--cm-raised:#243544;--cm-selected:#314653;--cm-chrome-line:#99aeb8;
+  --cm-marker:#edc07b;--cm-accent-ink:#172430;--cm-shadow:4px 4px 0 #080f17;
+  --cm-inset:inset 2px 2px 0 #415362;--cm-row-shadow:inset 4px 0 0 #edc07b,inset 8px -4px 0 -4px #edc07b;--ds-line:#99aeb8;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom:3px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:3px double var(--cm-chrome-line)!important;}
+/* 阶梯仅绘制在选中行内部，不裁切文本或扩大点击边界。 */
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border:2px solid var(--cm-marker)!important;box-shadow:var(--cm-row-shadow),inset -4px 0 0 var(--cm-selected)!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])) {border-width:2px!important;box-shadow:inset -2px -2px 0 var(--cm-chrome-line),var(--cm-inset)!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])):active {box-shadow:inset 2px 2px 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="composer"] {border-bottom-width:4px!important;box-shadow:none!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:2px dashed var(--cm-chrome-line)!important;}
+:scope :is([data-cm-theme-part~="dialog"],[data-cm-theme-part~="menu"]) {border:2px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 -4px 0 var(--cm-marker)!important;}
+:scope :is([data-cm-theme-part~="code"],[data-cm-theme-part~="terminal"],[data-cm-theme-part~="diff"]) {border-radius:0!important;border-left:3px solid var(--cm-chrome-line)!important;}

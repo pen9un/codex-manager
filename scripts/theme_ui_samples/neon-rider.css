@@ -1,0 +1,26 @@
+/* 霓虹疾行：机械护板、折角轮廓和青紫双侧封边；不裁切组件内容。 */
+:scope {
+  --cm-frame:linear-gradient(110deg,#e1deed,#f0eff7);--cm-frame-text:#302a47;
+  --cm-sidebar:#e8e5f0;--cm-control:#faf9ff;--cm-raised:#faf9ff;--cm-selected:#dfdbea;
+  --cm-chrome-line:#716182;--cm-radius:3px 18px 3px 3px;--cm-row-radius:2px 12px 2px 2px;--cm-button-radius:2px 10px 2px 2px;
+  --cm-line-width:2px;--cm-marker:#64408e;--cm-edge:#21667a;--cm-accent-ink:#faf9ff;
+  --cm-shadow:4px 4px 0 #716182;--cm-inset:inset 0 1px 0 #ffffff;
+  --cm-row-shadow:inset 4px 0 0 #21667a,inset -3px 0 0 #64408e;--cm-row-padding:9px 12px;--ds-line:#716182;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:linear-gradient(110deg,#25283f,#161a31);--cm-frame-text:#f3f5ff;
+  --cm-sidebar:#191e35;--cm-control:#20253e;--cm-raised:#242a43;--cm-selected:#343d59;
+  --cm-chrome-line:#a3afd0;--cm-marker:#aebeff;--cm-edge:#8edee5;--cm-accent-ink:#161a31;
+  --cm-shadow:4px 4px 0 #080e23;--cm-inset:inset 0 1px 0 #4b526e;
+  --cm-row-shadow:inset 4px 0 0 #8edee5,inset -3px 0 0 #aebeff;--ds-line:#a3afd0;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom:3px solid var(--cm-edge)!important;}
+:scope [data-cm-theme-part~="sidebar"] {border-right:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border-color:var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border-left:4px solid var(--cm-edge)!important;border-right:4px solid var(--cm-marker)!important;box-shadow:var(--cm-inset)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:3px double var(--cm-chrome-line)!important;}
+:scope :is([data-cm-theme-part~="dialog"],[data-cm-theme-part~="panel"]) {border-left:4px solid var(--cm-edge)!important;border-bottom:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:2px 2px 14px 2px!important;border-right:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="right-panel"] {border-radius:16px 0 0 2px!important;border-top:3px solid var(--cm-edge)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 -3px 0 var(--cm-edge)!important;border-right:2px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])):active {box-shadow:inset 3px 0 0 var(--cm-edge),inset 0 -2px 0 var(--cm-marker)!important;}

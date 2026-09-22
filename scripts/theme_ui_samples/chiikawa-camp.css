@@ -1,0 +1,36 @@
+/* 小小冒险队：铅笔营地轮廓、糖果贴纸状态与不规则纸页圆角。 */
+:scope {
+  --ds-text:#253528;--ds-muted:#45503c;--ds-line:#586444;--ds-green:#35624b;
+  --cm-frame:#e8eedc;--cm-frame-text:#253528;--cm-sidebar:#f0f2df;
+  --cm-control:#fffdf5;--cm-raised:#fffdf5;--cm-selected:#f5dfaa;--cm-chrome-line:#586444;
+  --cm-radius:19px 13px 21px 9px;--cm-row-radius:11px 7px 13px 8px;--cm-button-radius:13px 9px 12px 8px;
+  --cm-line-width:2px;--cm-marker:#805333;--cm-accent-ink:#fffdf5;
+  --cm-shadow:3px 4px 0 #cfdbbc;--cm-inset:inset 0 2px 0 #ffffff;--cm-row-shadow:inset 0 -3px 0 #805333;
+  --cm-row-padding:10px 12px;--cm-danger:#a02943;--cm-danger-bg:#fff0f3;--cm-success:#35624b;
+}
+:scope[data-original-mode="dark"] {
+  --ds-text:#fff8eb;--ds-muted:#ddd7e8;--ds-line:#b7accd;--ds-green:#f3d298;
+  --cm-frame:#333047;--cm-frame-text:#fff8eb;--cm-sidebar:#27283c;
+  --cm-control:#303147;--cm-raised:#303147;--cm-selected:#494059;--cm-chrome-line:#b7accd;
+  --cm-marker:#f3b3c2;--cm-accent-ink:#27283c;--cm-shadow:3px 4px 0 #141723;
+  --cm-inset:inset 0 2px 0 #ffffff20;--cm-row-shadow:inset 0 -3px 0 #f3b3c2;
+  --cm-danger:#ffb5c6;--cm-danger-bg:#452b3b;--cm-success:#b6e5b0;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom:2px dashed var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="sidebar"] {border-right:2px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:2px dotted var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border:2px dashed var(--ds-line)!important;}
+:scope [data-cm-theme-part~="composer"] {border-bottom:3px solid var(--cm-marker)!important;border-radius:22px 12px 18px 7px!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top-style:dotted!important;}
+:scope [data-cm-theme-part~="dialog"] {border-radius:15px 23px 11px 18px!important;box-shadow:4px 5px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="menu"] {border-style:dashed!important;border-radius:10px 15px 7px 12px!important;}
+:scope [data-cm-theme-part~="panel"],:scope [data-cm-theme-part~="right-panel"] {border-radius:9px 18px 9px 9px!important;border-bottom-width:3px!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {border:1px dashed var(--ds-line)!important;}
+:scope [data-cm-theme-part~="button"]:active {box-shadow:inset 0 2px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-style:dashed!important;border-radius:7px!important;}
+:scope [data-cm-theme-part~="settings"] {border-top:2px dotted var(--cm-chrome-line)!important;}
+
+/* 标题栏操作沿用所属材质，避免深色窗楣的浅字落到浅色控件上。 */
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"] {background:transparent!important;color:var(--cm-frame-text)!important;border-color:transparent!important;box-shadow:none!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:hover {box-shadow:inset 0 -2px 0 var(--cm-frame-text)!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:focus-visible {outline-color:var(--cm-frame-text)!important;}

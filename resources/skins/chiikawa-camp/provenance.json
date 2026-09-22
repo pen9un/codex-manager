@@ -1,0 +1,69 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "吉伊卡哇 · 小小冒险队",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case: illustration-story. Create an exquisite original scene composition starring the three referenced Chiikawa characters: white round Chiikawa with round ears, blue-and-white Hachiware with pointed blue ears and center-parted head pattern, pale yellow Usagi with long upright pink-lined ears. Preserve their recognizable tiny proportions, expressive eyes, black hand-drawn contours and pink cheeks exactly. They are camping together beside a small cream and coral tent, sharing a simple picnic, one holding a little plain cup, one offering a snack, Usagi excitedly pointing at a butterfly. Hand-drawn 2D gouache and soft watercolor storybook environment, NOT 3D plush. Bright clean spring grass, tiny daisies, soft sky-blue distance and cotton clouds. Premium restrained illustration, tactile paint, joyful composition. Wide landscape 16:9 target 3840x2160. All three characters clearly full-body within right x=53%-94%, feet above y=83%, with comfortable breathing room; left 43% calm pale sky and grass with sparse detail reserved for later real UI. Main characters fill right half strongly, not tiny distant figures. Balanced foreground/middle/distant depth, all faces visible. Reference images are character identity only: do not copy reference lettering or layout. NO typography, logos, watermark, software windows, UI controls, buttons, signs with text.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "24c7833071e0ccde46118c04e3bb91baf6968706b532a6bf10717f2f46c79967",
+      "references": [
+        "https://www.chiikawaofficial.com/characters"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/chiikawa-camp-light-home-1280.jpg",
+        "screenshot_sha256": "35fbaef30b58516c9ea98d87116eea5187677e4e518c572eefff08aee5fd7704",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Repaint this exact Chiikawa trio camping composition at early NIGHT. Keep the same three recognizable hand-drawn characters, proportions, expressions, positions, picnic objects, tent, outlines and illustration medium. Usagi pale yellow long ears on left of trio, round white Chiikawa center holding cup, blue-capped Hachiware at right holding cookie. All three full figures remain present. Replace daylight atmosphere with luminous dusky blue and muted violet landscape, a few gentle stars, tent glowing softly amber from within and a small warm camping lantern near the picnic basket. Warm local light on cheeks and hands, cool indigo shadows in grass. Retain light character body colors rather than tinting faces heavily purple. Left 43% quiet dark blue-violet sky and soft grass reserved for later UI, no broad white wash. Delicate watercolor/gouache hand-painted texture. Wide16:9 target3840x2160. NO letters, labels, typography, logo, UI, watermark, not3D.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "46d930bed318e811d13e186b77a6ddd48d842d55f26950a688b097a648f510e7",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/chiikawa-camp-dark-home-1280.jpg",
+        "screenshot_sha256": "f69e32d39f4866ede40c4c8a0bf7a32ee82774ee72b06b1fe4cd15f119384f60",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.chiikawaofficial.com/characters"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/chiikawa-camp.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

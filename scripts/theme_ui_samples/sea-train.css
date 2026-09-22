@@ -1,0 +1,36 @@
+/* 海上列车：深木窗楣、黄铜轨道、车票会话与水蓝阅读纸。 */
+:scope {
+  --ds-text:#243944;--ds-muted:#425964;--ds-line:#526e76;--ds-green:#286172;
+  --cm-frame:linear-gradient(180deg,#4d3c32,#382d27);--cm-frame-text:#fff2dd;--cm-sidebar:#dfeaed;
+  --cm-control:#f7fbfa;--cm-raised:#f7fbfa;--cm-selected:#d7e5e8;--cm-chrome-line:#526e76;
+  --cm-radius:8px 24px 8px 8px;--cm-row-radius:3px;--cm-button-radius:5px;
+  --cm-line-width:1px;--cm-marker:#86602e;--cm-accent-ink:#f7fbfa;
+  --cm-shadow:0 0 0 3px #c6d5d8,0 8px 20px #273d461c;--cm-inset:inset 0 2px 0 #ffffff;--cm-row-shadow:inset 4px 0 0 #86602e;
+  --cm-row-padding:10px 12px;--cm-danger:#a12b36;--cm-danger-bg:#fff1ef;--cm-success:#27614d;
+}
+:scope[data-original-mode="dark"] {
+  --ds-text:#fff5e8;--ds-muted:#ddd2dd;--ds-line:#b2a2bd;--ds-green:#edc095;
+  --cm-frame:linear-gradient(180deg,#372b2b,#241f25);--cm-frame-text:#fff5e8;--cm-sidebar:#2a293a;
+  --cm-control:#333244;--cm-raised:#333244;--cm-selected:#474055;--cm-chrome-line:#b2a2bd;
+  --cm-marker:#e4bb77;--cm-accent-ink:#292638;
+  --cm-shadow:0 0 0 3px #211e2e,0 8px 20px #00000038;--cm-inset:inset 0 2px 0 #efd0a21c;--cm-row-shadow:inset 4px 0 0 #e4bb77;
+  --cm-danger:#ffb7b4;--cm-danger-bg:#482d36;--cm-success:#b6dfc2;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom:4px ridge var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="sidebar"] {border-right:4px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:1px dashed var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border-style:dashed!important;border-right:4px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border:3px double var(--ds-line)!important;border-radius:10px 26px 10px 10px!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:1px dashed var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="dialog"] {border:4px double var(--cm-marker)!important;border-radius:10px 24px 10px 10px!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:3px!important;border-top:3px solid var(--cm-marker)!important;border-bottom-style:dashed!important;}
+:scope [data-cm-theme-part~="right-panel"],:scope [data-cm-theme-part~="panel"] {border-radius:8px 20px 8px 8px!important;border-top:3px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {border-radius:3px 3px 0 0!important;box-shadow:inset 0 -3px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="button"]:active {box-shadow:inset 0 2px 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-radius:3px!important;border-top:3px double var(--ds-line)!important;}
+:scope [data-cm-theme-part~="settings"] {border-top:3px double var(--cm-marker)!important;}
+
+/* 标题栏操作沿用所属材质，避免深色窗楣的浅字落到浅色控件上。 */
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"] {background:transparent!important;color:var(--cm-frame-text)!important;border-color:transparent!important;box-shadow:none!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:hover {box-shadow:inset 0 -2px 0 var(--cm-frame-text)!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:focus-visible {outline-color:var(--cm-frame-text)!important;}

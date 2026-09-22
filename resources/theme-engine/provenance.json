@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "sha256": "caf62a74c8b1255d42f0fba81ad4c910914d98fc5b299a2d684166cebb5ef10f",
+      "path": "src\\main\\vendor\\codex-themes\\engine\\compiler.ts"
+    },
+    {
+      "sha256": "f939b8fce4795b860ef93638cf5a2a1efc6c8722b9fadbc83592c2a849f36f36",
+      "path": "src\\main\\vendor\\codex-themes\\engine\\constants.ts"
+    },
+    {
+      "sha256": "0f0dc05c1239003b87348593c0649cbc210203fd1e97d7202e4edec1ee43ae89",
+      "path": "src\\main\\vendor\\codex-themes\\engine\\home-detection.ts"
+    },
+    {
+      "sha256": "7e394438283a55abfe9568b29dbccea603372efca2ce7e8440cc4e1f22c860ad",
+      "path": "src\\main\\vendor\\codex-themes\\engine\\normalize.ts"
+    },
+    {
+      "sha256": "44b2f8b0e7daedccb03665cfe5e87a11b2fb4ba2407d8d1753cd6a8703d8ce50",
+      "path": "src\\main\\vendor\\codex-themes\\engine\\payload.ts"
+    },
+    {
+      "sha256": "1cb001a419f9f8fc0fc0b108f0bb580cd0521e19b4886f3901877871d627d6a9",
+      "path": "src\\main\\vendor\\codex-themes\\shared\\tone.ts"
+    },
+    {
+      "sha256": "0999e4899e44692c0ff6ccf93b19e30a35f5bb3755ac63f6c35faea21d416081",
+      "path": "src\\main\\vendor\\codex-themes\\shared\\types.ts"
+    },
+    {
+      "sha256": "c83a19c7387fc239403a978cf1d6745cf59910a526888406bffa5631cc4eefc0",
+      "path": "resources\\theme-engine\\dream-skin.css"
+    },
+    {
+      "sha256": "d038dcb411010601fe16605ff5a721dad1968900e178d6a729a74e71ea723e5a",
+      "path": "resources\\theme-engine\\LICENSE"
+    },
+    {
+      "sha256": "fca188135340e8a103031cee4e5e96a61b410ec102003ff68589135f8730de04",
+      "path": "resources\\theme-engine\\renderer-inject.js"
+    }
+  ],
+  "repository": "freestylefly/codex-themes",
+  "license": "MIT",
+  "revision": "e33759183f6baa9c42856631cc8f9321486e60ae",
+  "local_adaptations": [
+    "normalize.ts：三个未使用参数加下划线前缀，适配当前 TypeScript 严格检查",
+    "dream-skin.css：将默认正文字体限定到非原创主题，原创主题保留客户端动态字体偏好；引擎资源与开源声明保留。",
+    "renderer-inject.js：识别完整原生明暗标记与系统模式；避免自身主题类名及已覆盖颜色干扰模式检测。原创适配层统一读取引擎检测结果。"
+  ],
+  "local_normalize_sha256": "6c38df3cae5568869b4b8740966cc3a8234f7dbbfb6d1e6cf353f9cd39003a43",
+  "original_adapter": "src/main/original_engine.ts：双图模式、原创样式、环境动效、清理和字体兼容。",
+  "local_dream_skin_css_sha256": "7688b628f07e1a0fe5942c5c2f1bc7a1e1efe5ec66362e53913de73b0479c435",
+  "local_renderer_inject_sha256": "0509207a32e77127e443c602db66998e342d3b729126d4aa1dbf72ced391697e"
+}

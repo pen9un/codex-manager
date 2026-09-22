@@ -1,0 +1,25 @@
+/* 慢半拍搭档：奶油便签、浅木封边、饼干按钮与可可色压边。 */
+:scope {
+  --cm-frame:linear-gradient(180deg,#f6e7d3,#ecd6bb);--cm-frame-text:#432d24;
+  --cm-sidebar:linear-gradient(90deg,#f1e1c9,#f7ecdc);--cm-control:#fff9ef;--cm-raised:#fff9ef;
+  --cm-selected:#ead7be;--cm-chrome-line:#94775c;--cm-radius:18px 18px 8px 8px;
+  --cm-row-radius:5px 12px 12px 5px;--cm-button-radius:10px;--cm-line-width:1px;
+  --cm-marker:#92502d;--cm-shadow:0 4px 0 #ccb393,0 10px 24px #62402616;
+  --cm-inset:inset 0 2px 0 #ffffffb3;--cm-row-shadow:inset 0 -3px 0 #b99065;
+  --cm-row-padding:10px 11px;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:linear-gradient(180deg,#4a352a,#38281f);--cm-frame-text:#fff5e6;
+  --cm-sidebar:linear-gradient(90deg,#30251f,#3a2b23);--cm-control:#382b24;--cm-raised:#382b24;
+  --cm-selected:#503c2d;--cm-chrome-line:#b79c7b;--cm-marker:#edbd80;
+  --cm-shadow:0 4px 0 #1b1410,0 10px 24px #00000035;--cm-inset:inset 0 1px 0 #d8ac6c30;--cm-row-shadow:inset 0 -3px 0 #d6a76c;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:1px dashed var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"]) {border-style:dashed!important;}
+:scope [data-cm-theme-part~="composer"] {box-shadow:inset 0 3px 8px #79543313,0 4px 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="button"]:not([data-cm-theme-part~="conversation"]):not([data-cm-theme-part~="menu-item"]) {box-shadow:0 2px 0 var(--cm-chrome-line),inset 0 1px 0 #ffffff24!important;}
+:scope [data-cm-theme-part~="button"]:active {box-shadow:inset 0 2px 3px #38261935!important;}
+:scope [data-cm-theme-part~="dialog"],:scope [data-cm-theme-part~="panel"] {border-top:4px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:7px 7px 16px 16px!important;}
+:scope [data-cm-theme-part~="right-panel"] {border-left:3px double var(--cm-chrome-line)!important;}

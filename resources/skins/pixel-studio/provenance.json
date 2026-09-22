@@ -1,0 +1,65 @@
+{
+  "original": true,
+  "content_kind": "original",
+  "ai_generated": true,
+  "theme": "像素开发部",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case stylized-concept. Create exquisite ORIGINAL pixel-art developer studio artwork, widescreen16:9 target3840x2160. Authentic deliberate crisp square-pixel clusters, limited elegant palette, careful dithering and precise isometric perspective, NOT blurred 3D voxel render. Main scene on right55%: cozy retro ivory CRT computer and chunky blank keycaps, teal workbench, small friendly original box-shaped robot with two simple glowing eyes tinkering with a little circuit board, stacked blank floppy disks, small potted plant, wall shelving, sunny loft window. CRT is a smooth unmarked teal phosphor screen with no text, data, diagrams, interface or code. Robot fully visible aroundx75%y62%. Delightful rich environmental storytelling, sophisticated cream, muted lake-blue, terracotta and golden morning sunshine. Left42% visually quiet cream studio wall and floor, subtle broad shadows, reserved for later real UI. Uniform pixel scale throughout all elements; square edges, restrained 1990s game background character. No typography, lettering, logos, watermarks, fake UI, HUD, dashboard, scanlines, glitch.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "4bd584422df67dbee2431a96cf1e7e6a9eb960b49b9e2c1ae925c6425d100559",
+      "references": [],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/pixel-studio-light-home-1280.jpg",
+        "screenshot_sha256": "a4d48e08ab7d807b46fcbeae2a0a1ff7f7a6a5a022de2c18548fd23a6f6c8fc3",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Transform this exact pixel-art developer studio into a cozy late NIGHT companion. Preserve every object, exact robot design, pose and proportions, CRT computer, desk, shelves, camera and pixel-art drawing style with crisp pixel clusters. Exterior window now deep navy with tiny distant warm town lights. The orange task lamp is switched on with a warm amber pool across robot hands/circuit board/keyboard; blank unmarked CRT emits subdued teal light onto ivory robot. Deep blue-gray walls and navy shadows, warm cream highlights. Left42% calm dark blue-gray wall and floor for later actual interface. Robot remains completely visible, no new robot, no text on screen, no UI, no labels, no watermark, no scanlines or glitch. Rich artisanal pixel art, wide16:9 target3840x2160. Change actual illumination rather than adding dark overlay.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "03927c357bb0627d8960f8d41099be12d50589663b66807e095838681296484c",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/pixel-studio-dark-home-1280.jpg",
+        "screenshot_sha256": "122dc897eef83290e652cc15d2fab86d65412c0b13b5680a7a8e86cf99c10e3a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/pixel-studio.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

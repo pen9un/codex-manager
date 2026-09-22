@@ -1,0 +1,70 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "千与千寻 · 海上列车",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case precise-object-edit. Finalize the supplied original Chihiro and No-Face sea-train DAY artwork as a polished hand-painted anime desktop background. Preserve exact composition, identities, full seated poses, faces, clothes, mask markings, character sizes and placement on right half, wooden carriage, red bench, brass window frames, bright blue sea and cloud-filled sky. Refine delicate painterly texture and clean fine contour edges around hair, hands, shoes and window reflections, maintaining natural hand-drawn quality. Both characters fully visible, faces unobstructed, left42% unoccupied bench and sea windows for later real interface. Brilliant airy water-blue, cloud-white and warm wood daylight, subtle material reflections. Wide16:9 target3840x2160. No words, logo, watermark, UI, fake controls or extra characters. Keep the scene and framing, no new layout.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "10bad2520e81612905edb4abb0fea1d15b1d596628e13879f55c0f8f52e6da8c",
+      "references": [
+        "https://www.ghibli.jp/works/chihiro/",
+        "assets/theme-v2/sea-train-light-generated.png（前序AI场景，精修输入）"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/sea-train-light-home-1280.jpg",
+        "screenshot_sha256": "2036fcca3a1887ae00aa2358b3153ab0369dd1b26f12f7e82f05b01b4e348351",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Edit the provided sea-train artwork into an exquisite twilight night companion image. Keep Chihiro and No-Face exactly recognizable, same facial designs, clothes, proportions, full seated poses, bench position, carriage geometry and camera. Preserve both characters entirely within right half. Change exterior to expansive luminous dusk-purple sea with distant tiny island lights and a few early stars, softly glowing amber carriage lamps and warm reflections on wood/brass and red bench, cool violet window reflections. Chihiro face gently warm and readable, No-Face mask porcelain white with same markings. Painterly cinematic hand-drawn anime background, detailed but serene. Left 42 percent empty windows and unoccupied seat remain available for later real interface. Native wide 16:9 target3840x2160. No text, no UI, no logo, no watermark. Redesign local lighting, do not just apply a purple filter.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "41c87581c05c5892021ee698f0ceabec3e82f6a62779482a44604c4f6fcf833b",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/sea-train-dark-home-1280.jpg",
+        "screenshot_sha256": "e56efc7b7af4f63f2715e8727adaebcae8877f6cd7987dfce7ee146c1b9ba403",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.ghibli.jp/works/chihiro/"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/sea-train.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

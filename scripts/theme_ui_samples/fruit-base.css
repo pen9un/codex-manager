@@ -1,0 +1,23 @@
+/* 冰蓝基地：舷窗顶栏、胶囊操作、暖金会话标记与瓷白设备表面。 */
+:scope {
+  --cm-frame:linear-gradient(180deg,#e4f2ff,#cddff3);--cm-frame-text:#142c48;
+  --cm-sidebar:linear-gradient(165deg,#edf6ff 0%,#d9e9fa 100%);--cm-raised:#f7faff;
+  --cm-control:#f7faff;--cm-selected:#c8dff7;--cm-chrome-line:#647f9e;
+  --cm-radius:24px;--cm-row-radius:14px;--cm-button-radius:999px;--cm-line-width:1px;
+  --cm-marker:#a96800;--cm-shadow:0 5px 0 #aebfd8,0 12px 28px #112d4a18;
+  --cm-inset:inset 0 2px 0 #ffffffa6;--cm-row-shadow:inset 4px 0 0 #a96800;
+  --cm-row-padding:11px 12px;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:linear-gradient(180deg,#294565,#182c49);--cm-frame-text:#f1f7ff;
+  --cm-sidebar:linear-gradient(165deg,#182d48,#10213b);--cm-raised:#182b46;--cm-control:#1c314f;
+  --cm-selected:#304c6d;--cm-chrome-line:#8199b6;--cm-marker:#f4cd78;
+  --cm-shadow:0 5px 0 #08172c,0 12px 28px #00000035;--cm-inset:inset 0 1px 0 #a6caff28;--cm-row-shadow:inset 4px 0 0 #f4cd78;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom-width:3px!important;border-bottom-color:var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top-style:dashed!important;}
+:scope [data-cm-theme-part~="composer"] {border-bottom-width:3px!important;}
+:scope [data-cm-theme-part~="dialog"] {border-top:5px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="right-panel"] {border-radius:20px 0 0 20px!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:18px!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 -3px 0 var(--cm-marker)!important;}

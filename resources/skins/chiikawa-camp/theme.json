@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-chiikawa-camp",
+  "id": "chiikawa-camp",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "吉伊卡哇 · 小小冒险队",
+  "description": "吉伊、小八和乌萨奇的草地营地，一起出发，一起收获微小的快乐。",
+  "tagline": "小小的我们，也有大大的冒险。",
+  "tags": [
+    "吉伊卡哇",
+    "手绘",
+    "露营"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#f5f8ee",
+    "panel": "#fffdf5",
+    "panelAlt": "#e8eedc",
+    "surface": "#fffdf5",
+    "text": "#253528",
+    "muted": "#506344",
+    "border": "#6c805b",
+    "accent": "#35624b",
+    "accentAlt": "#35624b",
+    "secondary": "#35624b",
+    "highlight": "#35624b"
+  },
+  "dark": {
+    "background": "#202137",
+    "panel": "#292b45",
+    "panelAlt": "#33364f",
+    "surface": "#292b45",
+    "text": "#fff8eb",
+    "muted": "#d5d4e4",
+    "border": "#969cb8",
+    "accent": "#e9c9a0",
+    "accentAlt": "#e9c9a0",
+    "secondary": "#e9c9a0",
+    "highlight": "#e9c9a0"
+  },
+  "layout": "paper-board",
+  "heroFit": "contain",
+  "heroFocusX": 0.75,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 440,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "lg",
+  "density": "spacious",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "吉伊卡哇 · 小小冒险队",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "小小的我们，也有大大的冒险。",
+  "codexManager": {
+    "category": "trending",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "breeze",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "ui_revision": 1
+  }
+}

@@ -1,0 +1,50 @@
+node_modules/
+out/
+dist/
+releases/
+reports/
+*.log
+*.vault
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+auth.json*
+config.toml*
+theme-backups/
+coverage/
+
+# 本机缓存、编辑器和自动化运行状态
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.cache/
+.idea/
+.vscode/
+.codex/
+.kiro/
+.agents/
+Thumbs.db
+*.tmp
+*.bak
+*.bak-*
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite*
+
+# 绘画原稿与历史素材不参与应用构建；运行资源在 resources/。
+/assets/
+
+# 旧脚本会续期并改写真账号保险库，仅保留本地排查使用。
+/scripts/live-smoke.cjs
+
+# 内部设计与验收资料留在本机；公开文档使用明确的允许列表。
+/docs/*
+!/docs/theme-gallery/
+!/docs/images/
+!/docs/开源发布检查清单-20260922.md
+!/docs/GitHub发布指南-20260923.md

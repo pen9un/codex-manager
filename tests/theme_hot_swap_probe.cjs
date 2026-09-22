@@ -1,0 +1,80 @@
+// 仅在独立Electron进程中验证真实CDP热切换，不连接或修改用户Codex。
+const { app, BrowserWindow, protocol } = require('electron')
+const fs = require('node:fs')
+const path = require('node:path')
+const os = require('node:os')
+const Module = require('node:module')
+const assert = require('node:assert/strict')
+const { randomUUID } = require('node:crypto')
+const root = path.resolve(__dirname, '..')
+const report_path = path.join(root, 'reports/不重启切换主题隔离验证-20260921.json')
+const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), 'theme-hot-swap-'))
+const port = 35000 + Math.floor(Math.random() * 15000)
+const test_host = `theme-research-${randomUUID()}`
+const report = { passed: false, scope: '隔离Electron，非真实Codex；只证明连接已存在后的热切换', process_id: process.pid, port, sandbox, samples: [] }
+app.setPath('userData', sandbox)
+app.commandLine.appendSwitch('remote-debugging-address', '127.0.0.1')
+app.commandLine.appendSwitch('remote-debugging-port', String(port))
+protocol.registerSchemesAsPrivileged([{ scheme: 'app', privileges: { standard: true, secure: true } }])
+
+async function run() {
+  const store = path.join(root, 'node_modules/.pnpm')
+  const entry = fs.readdirSync(store).find(name=>name.startsWith('esbuild@'))
+  const { buildSync } = require(path.join(store, entry, 'node_modules/esbuild'))
+  const bundle = buildSync({ entryPoints: [path.join(__dirname, 'theme_electron_entry.ts')], bundle: true, platform: 'node', format: 'cjs', write: false }).outputFiles[0].text
+  const compiled = new Module(__filename, module)
+  compiled.filename = __filename; compiled.paths = module.paths; compiled._compile(bundle, __filename)
+  const { ThemeRuntime, connect_codex_theme } = compiled.exports
+  await app.whenReady()
+  protocol.handle('app', request=>{
+    assert.equal(new URL(request.url).hostname, test_host)
+    return new Response('<!doctype html><html class="dark" data-theme="dark"><head><title>Codex</title><style>body{display:flex}aside{width:220px}main{flex:1}</style></head><body><aside class="app-shell-left-panel"><button>Codex</button></aside><main class="main-surface" role="main"><p>隔离测试</p><div class="composer-surface-chrome"><div id="draft" class="ProseMirror" role="textbox" contenteditable="true">尚未发送的中文草稿</div></div><p id="counter">0</p></main></body></html>', { headers: { 'content-type': 'text/html;charset=utf-8' } })
+  })
+  const window = new BrowserWindow({ show: false, webPreferences: { offscreen: true, backgroundThrottling: false, contextIsolation: true, nodeIntegration: false } })
+  await window.loadURL(`app://${test_host}/task`)
+  let navigations = 0
+  window.webContents.on('did-navigate', ()=>navigations++)
+  const renderer_id = window.webContents.getOSProcessId()
+  const js = source=>window.webContents.executeJavaScript(source)
+  const token = randomUUID()
+  await js(`window.research_token=${JSON.stringify(token)};window.original_editor=document.querySelector('#draft');window.progress=0;window.research_timer=setInterval(()=>{document.querySelector('#counter').textContent=String(++window.progress)},20);window.original_editor.focus();const range=document.createRange();range.setStart(window.original_editor.firstChild,3);range.collapse(true);getSelection().removeAllRanges();getSelection().addRange(range);`)
+  const read_state = ()=>js(`({token:window.research_token,same_editor:document.querySelector('#draft')===window.original_editor,draft:document.querySelector('#draft').textContent,caret:getSelection().anchorOffset,progress:window.progress,theme:window.__CODEX_DREAM_SKIN_STATE__?.themeId??null})`)
+  const before = await read_state()
+  const connect = async()=>{
+    const targets = await fetch(`http://127.0.0.1:${port}/json/list`).then(response=>response.json())
+    const pages = targets.filter(target=>target.type==='page')
+    assert.equal(pages.length, 1)
+    assert.equal(pages[0].url, window.webContents.getURL(), '只允许连接本测试创建的页面')
+    return connect_codex_theme([port])
+  }
+  const runtime = new ThemeRuntime(path.join(sandbox, 'backups'), connect, path.join(root, 'resources'))
+  const original = await runtime.backup()
+  for (const id of ['fruit-base','lulu-duo','totoro-stop','zero-day','fruit-base']) {
+    await runtime.apply(id)
+    const state = await read_state()
+    assert.equal(state.theme, id)
+    assert.equal(state.token, token)
+    assert.equal(state.same_editor, true)
+    assert.equal(state.draft, before.draft)
+    assert.equal(state.caret, before.caret)
+    assert.equal(window.webContents.getOSProcessId(), renderer_id)
+    assert.equal(navigations, 0)
+    report.samples.push({ id, renderer_id, navigations, ...state })
+  }
+  await runtime.restore(original.id)
+  const restored = await read_state()
+  assert.equal(restored.theme, null)
+  assert.equal(restored.draft, before.draft)
+  assert.equal(restored.same_editor, true)
+  assert.equal(restored.token, token)
+  assert.ok(restored.progress > before.progress, '模拟页面活动应在热切换期间继续；不代表真实AI任务已验证')
+  assert.equal(window.webContents.getOSProcessId(), renderer_id)
+  assert.equal(navigations, 0)
+  await js('clearInterval(window.research_timer)')
+  report.restored = restored; report.renderer_id = renderer_id; report.navigations = navigations; report.passed = true
+  fs.writeFileSync(report_path, JSON.stringify(report, null, 2))
+  window.destroy()
+  console.log('CDP热切换通过：5次应用、原生恢复、进程与文档未重建、草稿和光标保持')
+  app.exit(0)
+}
+run().catch(error=>{report.error=error.stack;fs.writeFileSync(report_path,JSON.stringify(report,null,2));console.error('热切换隔离研究失败：',error);app.exit(1)})

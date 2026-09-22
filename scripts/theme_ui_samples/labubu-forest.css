@@ -1,0 +1,39 @@
+/* 怪趣森林：苔藓色树脂壳、莓果嵌件与柔软的双层压边。 */
+:scope {
+  --ds-text:#283b31;--ds-muted:#455443;--ds-line:#556848;--ds-green:#703c61;
+  --cm-frame:linear-gradient(180deg,#e6eedc,#cfdfc4);--cm-frame-text:#283b31;--cm-sidebar:#e4ecda;
+  --cm-control:#fafbef;--cm-raised:#fafbef;--cm-selected:#e3d7de;--cm-chrome-line:#556848;
+  --cm-radius:26px;--cm-row-radius:16px 16px 16px 5px;--cm-button-radius:16px;
+  --cm-line-width:2px;--cm-marker:#703c61;--cm-accent-ink:#fafbef;
+  --cm-shadow:inset 0 3px 0 #ffffff,0 5px 0 #a3b795,0 10px 18px #263b2514;
+  --cm-inset:inset 0 3px 0 #ffffffb3,inset 0 -3px 0 #5674461a;--cm-row-shadow:inset 5px 0 0 #703c61;
+  --cm-row-padding:11px 13px;--cm-danger:#9e2846;--cm-danger-bg:#fff0f3;--cm-success:#35614a;
+}
+:scope[data-original-mode="dark"] {
+  --ds-text:#faf2ff;--ds-muted:#decee7;--ds-line:#b49dc2;--ds-green:#e5b6d3;
+  --cm-frame:linear-gradient(180deg,#46334f,#33253f);--cm-frame-text:#faf2ff;--cm-sidebar:#2e263b;
+  --cm-control:#352a43;--cm-raised:#352a43;--cm-selected:#523b59;--cm-chrome-line:#b49dc2;
+  --cm-marker:#e5b6d3;--cm-accent-ink:#302039;
+  --cm-shadow:inset 0 3px 0 #ead5ff24,0 5px 0 #18121f,0 10px 18px #00000030;
+  --cm-inset:inset 0 3px 0 #ead5ff24,inset 0 -3px 0 #110b192e;--cm-row-shadow:inset 5px 0 0 #e5b6d3;
+  --cm-danger:#ffb4c8;--cm-danger-bg:#4b2c43;--cm-success:#bfe0a7;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom-width:3px!important;}
+:scope [data-cm-theme-part~="sidebar"] {box-shadow:inset -4px 0 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border-radius:18px 18px 18px 5px!important;border-color:var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border-radius:28px 28px 16px 16px!important;border-bottom-width:4px!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:2px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])) {box-shadow:var(--cm-inset),0 2px 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="button"]:active {box-shadow:inset 0 3px 0 var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="dialog"] {border:3px solid var(--ds-line)!important;border-radius:32px 32px 20px 20px!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:18px 18px 18px 6px!important;border-bottom-width:4px!important;}
+:scope [data-cm-theme-part~="right-panel"],:scope [data-cm-theme-part~="panel"] {border-radius:22px 8px 22px 22px!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {border-radius:16px!important;box-shadow:inset 0 -3px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-radius:12px!important;box-shadow:var(--cm-inset)!important;}
+:scope [data-cm-theme-part~="settings"] {border-top:3px solid var(--cm-marker)!important;}
+
+/* 标题栏操作沿用所属材质，避免深色窗楣的浅字落到浅色控件上。 */
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"] {background:transparent!important;color:var(--cm-frame-text)!important;border-color:transparent!important;box-shadow:none!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:hover {box-shadow:inset 0 -2px 0 var(--cm-frame-text)!important;}
+:scope :is([data-cm-theme-part~="titlebar"],[data-cm-theme-part~="header"]) [data-cm-theme-part~="button"]:focus-visible {outline-color:var(--cm-frame-text)!important;}

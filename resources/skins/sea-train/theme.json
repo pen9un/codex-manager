@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-sea-train",
+  "id": "sea-train",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "千与千寻 · 海上列车",
+  "description": "千寻与无脸男的安静旅途，窗外水天相接，车灯映亮新的章节。",
+  "tagline": "让思绪，随列车驶向远方。",
+  "tags": [
+    "千与千寻",
+    "海上列车",
+    "安静旅途"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#edf5f6",
+    "panel": "#f7fbfa",
+    "panelAlt": "#dae8e9",
+    "surface": "#f7fbfa",
+    "text": "#243944",
+    "muted": "#49616a",
+    "border": "#637e84",
+    "accent": "#286172",
+    "accentAlt": "#286172",
+    "secondary": "#286172",
+    "highlight": "#286172"
+  },
+  "dark": {
+    "background": "#242638",
+    "panel": "#303044",
+    "panelAlt": "#3b3b51",
+    "surface": "#303044",
+    "text": "#fff5e8",
+    "muted": "#d3cddd",
+    "border": "#a49ab7",
+    "accent": "#edc095",
+    "accentAlt": "#edc095",
+    "secondary": "#edc095",
+    "highlight": "#edc095"
+  },
+  "layout": "dream-banner",
+  "heroFit": "contain",
+  "heroFocusX": 0.75,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 440,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "md",
+  "density": "spacious",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "千与千寻 · 海上列车",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "让思绪，随列车驶向远方。",
+  "codexManager": {
+    "category": "anime",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "moonlight",
+    "original": false,
+    "content_kind": "ip-recreation",
+    "ui_revision": 1
+  }
+}

@@ -1,0 +1,27 @@
+/* 星港远航：舷窗圆角与分段舱室，定位线只指示实际选中组件。 */
+:scope {
+  --cm-frame:#dbe9ed;--cm-frame-text:#17202b;--cm-sidebar:#e6eff2;
+  --cm-control:#f6fbfc;--cm-raised:#f6fbfc;--cm-selected:#d5e5ea;--cm-chrome-line:#5d7783;
+  --cm-radius:22px;--cm-row-radius:7px;--cm-button-radius:999px;--cm-line-width:1px;
+  --cm-marker:#176879;--cm-accent-ink:#ffffff;--cm-shadow:0 0 0 3px #c9dce3,0 8px 24px #18394618;
+  --cm-inset:inset 0 2px 0 #ffffff;--cm-row-shadow:inset 3px 0 0 #176879,inset -3px 0 0 #176879;
+  --cm-row-padding:10px 12px;--ds-line:#5d7783;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#142c40;--cm-frame-text:#ffffff;--cm-sidebar:#102336;
+  --cm-control:#172e41;--cm-raised:#193247;--cm-selected:#284657;--cm-chrome-line:#9caebf;
+  --cm-marker:#85ddec;--cm-accent-ink:#0d1b2c;--cm-shadow:0 0 0 3px #2d4659,0 8px 24px #020b1966;
+  --cm-inset:inset 0 2px 0 #3b596d;--cm-row-shadow:inset 3px 0 0 #85ddec,inset -3px 0 0 #85ddec;--ds-line:#9caebf;
+}
+:scope [data-cm-theme-part~="titlebar"] {border-bottom:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {border-color:var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border:3px double var(--cm-chrome-line)!important;box-shadow:var(--cm-inset)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top-style:dashed!important;}
+:scope [data-cm-theme-part~="dialog"] {border:3px double var(--cm-chrome-line)!important;border-radius:28px!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:14px!important;border-top:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="right-panel"] {border-left:3px double var(--cm-chrome-line)!important;border-radius:22px 0 0 22px!important;}
+:scope [data-cm-theme-part~="tab"] {border-radius:999px!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 0 0 2px var(--cm-marker)!important;}
+:scope :is([data-cm-theme-part~="code"],[data-cm-theme-part~="terminal"],[data-cm-theme-part~="diff"]) {border-radius:8px!important;border-left:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])):active {box-shadow:inset 0 2px 4px #10233650!important;}

@@ -1,0 +1,59 @@
+{
+  "original": true,
+  "ai_generated": true,
+  "theme": "纸上山河",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Original premium art for a desktop theme, landscape16:9 target3840x2160. Pure artwork, no letters, text, logos, watermark, UI or picture frames. Asymmetrical exquisite composition, left half gentle quiet low-detail negative space, main visual to the right. Ink Landscape LIGHT. ORIGINAL contemporary Chinese ink wash landscape painting on delicate ivory xuan paper: expressive grey-black mountain cliffs and a few dark pine silhouettes on far RIGHT, layered pale misty ridgelines fading to a nearly empty ivory LEFT half, tiny single vermilion-red boat near lower right for exquisite scale. Beautiful controlled ink gradation, fine dry-brush rock edges, tactile but quiet paper, elegant literati composition without copying any painting. Absolutely NO calligraphy, seals, characters or stamps.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "e8849fafaa1a1f2bb8ff5d2fd617c552838b8503cb9e0cca4db389fbd5124424",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/ink-landscape-light-home-1280.jpg",
+        "screenshot_sha256": "90fe6b2164c905d943d8149ded8626c99121112021841641e09bb7dc974f516a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "文本生成原创图像"
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "将同一原创水墨山河重新设计为深色宣纸墨灰背景，温暖朱红小舟，银灰墨色山势与柔和雾气，传统东方水墨绘画材质自然细腻，右侧山势，左侧暗色留白。不要文字、印章、UI。横向4K目标，保持构图身份。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "a8b08a22f7a033b13d95631aeeaf680dbb91eab03407976c66c4f34207b906d9",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/ink-landscape-dark-home-1280.jpg",
+        "screenshot_sha256": "9993723aef12a5add7a88f37622151c59fef558da584984a23f3c4f7bd096ddd",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "参考同组浅色原图进行 AI 重绘"
+    }
+  },
+  "preview": "由同一主题渲染引擎的隔离示例界面生成；不是实际用户会话截图",
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/ink-landscape.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

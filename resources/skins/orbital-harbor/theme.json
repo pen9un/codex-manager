@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-orbital-harbor",
+  "id": "orbital-harbor",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "星港远航",
+  "description": "原创轨道空间站与遥远行星，打开辽阔的想象。",
+  "tagline": "下一次探索，从这里启航。",
+  "tags": [
+    "科幻",
+    "星空",
+    "沉浸"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#eef6f8",
+    "panel": "#eef6f8",
+    "panelAlt": "#e7ecf2",
+    "surface": "#ffffff",
+    "text": "#17202b",
+    "muted": "#4c5766",
+    "border": "#7b8798",
+    "accent": "#176879",
+    "accentAlt": "#176879",
+    "secondary": "#176879",
+    "highlight": "#176879"
+  },
+  "dark": {
+    "background": "#0d1b2c",
+    "panel": "#0d1b2c",
+    "panelAlt": "#29323e",
+    "surface": "#202934",
+    "text": "#ffffff",
+    "muted": "#c2c9d2",
+    "border": "#8996a8",
+    "accent": "#85ddec",
+    "accentAlt": "#85ddec",
+    "secondary": "#85ddec",
+    "highlight": "#85ddec"
+  },
+  "layout": "full-canvas",
+  "heroFit": "cover",
+  "heroFocusX": 0.77,
+  "heroFocusY": 0.48,
+  "heroZoom": 1,
+  "heroHeight": 360,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "md",
+  "density": "normal",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "星港远航",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "下一次探索，从这里启航。",
+  "codexManager": {
+    "category": "cyber",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "orbit",
+    "original": true,
+    "content_kind": "original",
+    "ui_revision": 1
+  }
+}

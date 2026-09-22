@@ -1,0 +1,72 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "噜噜与噜妹 · 慢半拍搭档",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Create a newly composed premium 3D animated still of the internet capybara characters 水豚噜噜 and 噜妹, using the attached references for CHARACTER IDENTITY, not copying their photograph composition. Reference1 shows Lulu's official character appearance, references2 and3 show the pair's different expressions. Both mustard-yellow rounded capybaras, huge wide rounded orange muzzles, tiny ears, small half-lidded blue-grey eyes, slightly goofy deadpan expressions, little orange fruit with green leaf on top of head. Do NOT draw brown realistic capybaras, bears, otters, beavers or penguins. Left member has a tiny green sleep cap under its orange, playful one-eye sleepy wink, light cream little waistcoat; right member orange directly on its head, both eyes half-lidded, a peach knit scarf. NO eyeglasses. Pair sits close together on the RIGHT HALF around a low rounded pale-wood tea table, sharing one cookie between their little paws, orange wedges on a dish and two tiny tea cups. Their expressions affectionate but hilariously unhurried. Cozy designer miniature sunroom, a rounded window with leaves and warm soft sun shadows, vanilla cream wall, pale oak tabletop, woven fabric, beautiful soft tactile 3D animation quality and realistic diffuse lighting. Both entire bodies clearly visible, at x=55%-92%, y=25%-80%, grouped at right; LEFT43% calm warm cream wall with soft depth for interface later. Wide 16:9, target3840x2160. Pure artwork, no text, logos, watermarks, software interfaces, labels, buttons or dashboard. Strongly recognizable broad orange-muzzle character proportions, not generic cuddly mammals.",
+      "native_dimensions": [
+        1672,
+        940
+      ],
+      "source_sha256": "aa0cb56ecd22782734595b64370a4ddaad098ce81288e2d18a472770ae43337d",
+      "references": [
+        "https://www.chinalicensingexpo.com/cn/product/1849",
+        "https://www.sina.cn/news/detail/5331448510808568.html"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/lulu-duo-light-home-1280.jpg",
+        "screenshot_sha256": "a9a5b1e30af1051f123c663a1b5efc360577ff058b0e968aa9e92615b5fd8056",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Create the NIGHT companion of this exact Lulu and Lumei capybara duo artwork. Keep the exact two characters, sleepy eye expressions, orange muzzles, orange fruits, green sleep cap, cream waistcoat and peach scarf, the shared cookie, table, cups and every character placement unchanged. Re-light the same cozy sunroom after dark: deep cocoa and desaturated walnut walls, warm paper pendant lantern and tiny amber floor light, blue-black night through the round window. Warm golden highlights on the yellow plush faces, beautiful soft fur texture, mild moonlight at edges, no harsh white bloom. LEFT43% muted dark cocoa negative space with very soft indirect lighting for interface later; pair remains bright and readable on right. Preserve relaxed affectionate humor, premium tactile 3D film render, not a simple dark color filter. 16:9 wide landscape, target3840x2160. No text, no UI, no watermark.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "9331c942241abbe39c1ac494c46f20732028d1168fe44654baca8b09a1e6d2b4",
+      "references": [
+        "https://www.chinalicensingexpo.com/cn/product/1849",
+        "https://www.sina.cn/news/detail/5331448510808568.html"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/lulu-duo-dark-home-1280.jpg",
+        "screenshot_sha256": "8be2fff3184a7cd5fb0c399722c1aa7f5ab9b2bf576cbb8fa55d3cfe3afc284a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.chinalicensingexpo.com/cn/product/1849",
+    "https://www.sina.cn/news/detail/5331448510808568.html"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/lulu-duo.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

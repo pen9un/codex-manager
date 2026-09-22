@@ -1,0 +1,29 @@
+/* 苔原松风：雾面石板、松绿压槽与舒展的圆角；正文始终使用实底。 */
+:scope {
+  --cm-frame:#e6ece2;--cm-frame-text:#22372b;--cm-sidebar:#eaf0e5;
+  --cm-control:#f5f7f0;--cm-raised:#f8faf4;--cm-selected:#e2ebdb;--cm-chrome-line:#647760;
+  --cm-radius:18px;--cm-row-radius:10px;--cm-button-radius:8px;--cm-line-width:1px;
+  --cm-marker:#32664b;--cm-accent-ink:#ffffff;--cm-shadow:0 5px 16px #253b2217;
+  --cm-inset:inset 0 1px 0 #ffffff,inset 0 -2px 0 #cad4c1;--cm-row-shadow:inset 3px 0 0 #32664b;
+  --cm-row-padding:10px 12px;--cm-stone-edge:#bdc9b5;--cm-stone-groove:#d5dece;
+  --ds-line:var(--cm-chrome-line)!important;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#202e26;--cm-frame-text:#edf4e8;--cm-sidebar:#1b2b23;
+  --cm-control:#26372b;--cm-raised:#2a3b2f;--cm-selected:#344834;--cm-chrome-line:#9bae8e;
+  --cm-radius:18px;--cm-row-radius:10px;--cm-button-radius:8px;--cm-line-width:1px;
+  --cm-marker:#a7d2ad;--cm-accent-ink:#15221e;--cm-shadow:0 5px 16px #030b0733;
+  --cm-inset:inset 0 1px 0 #52614a,inset 0 -2px 0 #122119;--cm-row-shadow:inset 3px 0 0 #a7d2ad;
+  --cm-row-padding:10px 12px;--cm-stone-edge:#102017;--cm-stone-groove:#394b38;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {box-shadow:inset 0 -3px 0 var(--cm-stone-groove)!important;}
+:scope [data-cm-theme-part~="sidebar"] {box-shadow:inset -4px 0 0 var(--cm-stone-groove)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"]) {box-shadow:var(--cm-row-shadow),inset 0 -2px 0 var(--cm-stone-edge)!important;}
+:scope [data-cm-theme-part~="composer"] {border-radius:18px 18px 12px 12px!important;box-shadow:inset 0 2px 4px var(--cm-stone-groove),0 3px 0 var(--cm-stone-edge)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top-style:double!important;border-top-width:3px!important;}
+:scope [data-cm-theme-part~="panel"],:scope [data-cm-theme-part~="right-panel"] {box-shadow:inset 0 3px 0 var(--cm-stone-groove)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:12px!important;box-shadow:0 3px 0 var(--cm-stone-edge),var(--cm-shadow)!important;}
+:scope [data-cm-theme-part~="dialog"] {border-top:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="settings"] {box-shadow:inset 0 3px 0 var(--cm-stone-groove)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {box-shadow:inset 0 -3px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-radius:6px!important;box-shadow:inset 3px 0 0 var(--cm-stone-groove)!important;color:var(--ds-text)!important;}

@@ -1,0 +1,41 @@
+name: Bug 报告
+description: 报告可以复现的功能问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请不要粘贴访问令牌、auth.json、accounts.vault、完整会话或包含个人内容的日志。
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本
+      placeholder: 例如 2.0.1
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      placeholder: 例如 Windows 11 x64、安装包或源码运行
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请给出最小、可重复的步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志或截图
+      description: 提交前删除令牌、邮箱、路径和会话正文。

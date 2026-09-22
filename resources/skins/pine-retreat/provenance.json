@@ -1,0 +1,59 @@
+{
+  "original": true,
+  "ai_generated": true,
+  "theme": "苔原松风",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Original premium art for a desktop theme, landscape16:9 target3840x2160. Pure artwork, no letters, text, logos, watermark, UI or picture frames. Asymmetrical exquisite composition, left half gentle quiet low-detail negative space, main visual to the right. Pine Retreat LIGHT. Fine-art landscape photography of an original alpine pine grove on right, mossy pale granite foreground and a still mirror lake, layers of mountain mist drifting left under diffused early morning light. Soft sage pine needles, pale silver green atmosphere, delicate reflected tree silhouettes. Natural believable landscape, serene, restrained green-grey palette, exceptional depth and subtle detail, no buildings or people.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "d5998044f15620e5fcd39c63d89a3387f24dc37fa105bf8e37172509e2ba60e8",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/pine-retreat-light-home-1280.jpg",
+        "screenshot_sha256": "3cbdcde52c762cc9a4e9f8ea2af4dea3cdff1b9f7c0c32e66176bd4c3162d7ac",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "文本生成原创图像"
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "将同一原创松林湖岸构图重新设计为深色夜景：森林灰、鼠尾草绿、薄雾月光，真实细腻自然摄影感，右侧松林与远山仍有丰富层次，左侧大面积安静暗色留白。不要文字、标志、UI。横向4K目标，保持构图身份。",
+      "native_dimensions": [
+        1671,
+        941
+      ],
+      "source_sha256": "2e7af1a44882ef7f9c0ebb85a245363b0170ef352d097343f7f79d97ad779e0e",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/pine-retreat-dark-home-1280.jpg",
+        "screenshot_sha256": "bc06f6c2bec3afdb461046a30a7009a9cdb5d39b192a5ec68d313bd9b9a58663",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "参考同组浅色原图进行 AI 重绘"
+    }
+  },
+  "preview": "由同一主题渲染引擎的隔离示例界面生成；不是实际用户会话截图",
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/pine-retreat.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

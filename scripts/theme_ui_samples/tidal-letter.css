@@ -1,0 +1,28 @@
+/* 潮汐来信：海盐玻璃的实底内层、双层潮线与圆润玻璃边沿。 */
+:scope {
+  --cm-frame:linear-gradient(180deg,#f1fbfd,#dceff3);--cm-frame-text:#193d4c;--cm-sidebar:#e8f4f6;
+  --cm-control:#f3fbfc;--cm-raised:#f6fcfd;--cm-selected:#deeff3;--cm-chrome-line:#547a86;
+  --cm-radius:16px;--cm-row-radius:8px 16px 16px 8px;--cm-button-radius:12px;--cm-line-width:1px;
+  --cm-marker:#186880;--cm-accent-ink:#ffffff;--cm-shadow:0 7px 20px #1646531a;
+  --cm-inset:inset 0 2px 0 #ffffff,inset 0 -2px 0 #c8e2e8;--cm-row-shadow:inset 0 -2px 0 #186880;
+  --cm-row-padding:9px 12px;--cm-glass-rim:#b8d9e2;--cm-glass-light:#ffffff;
+  --ds-line:var(--cm-chrome-line)!important;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:linear-gradient(180deg,#203d4b,#172e3c);--cm-frame-text:#ecfaff;--cm-sidebar:#172d39;
+  --cm-control:#203a48;--cm-raised:#23404d;--cm-selected:#2b4957;--cm-chrome-line:#99bdc8;
+  --cm-radius:16px;--cm-row-radius:8px 16px 16px 8px;--cm-button-radius:12px;--cm-line-width:1px;
+  --cm-marker:#8fd9e8;--cm-accent-ink:#10222e;--cm-shadow:0 7px 20px #030e183d;
+  --cm-inset:inset 0 2px 0 #497180,inset 0 -2px 0 #122833;--cm-row-shadow:inset 0 -2px 0 #8fd9e8;
+  --cm-row-padding:9px 12px;--cm-glass-rim:#395b6b;--cm-glass-light:#517a88;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="sidebar"] {box-shadow:inset -5px 0 0 var(--cm-glass-rim),inset -6px 0 0 var(--cm-glass-light)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"]) {border-bottom:3px double var(--cm-marker)!important;box-shadow:inset 0 1px 0 var(--cm-glass-light)!important;}
+:scope [data-cm-theme-part~="composer"] {border-radius:20px 20px 10px 10px!important;box-shadow:inset 0 3px 0 var(--cm-glass-light),0 3px 0 var(--cm-glass-rim),var(--cm-shadow)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:3px double var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="panel"],:scope [data-cm-theme-part~="right-panel"] {border-radius:12px!important;box-shadow:inset 0 3px 0 var(--cm-glass-light),inset 0 -3px 0 var(--cm-glass-rim)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:8px 8px 18px 18px!important;border-bottom:3px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="dialog"] {box-shadow:inset 0 3px 0 var(--cm-glass-light),0 0 0 3px var(--cm-glass-rim),var(--cm-shadow)!important;}
+:scope [data-cm-theme-part~="settings"] {box-shadow:inset 0 3px 0 var(--cm-glass-rim)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-radius:8px!important;border-left:3px double var(--cm-chrome-line)!important;color:var(--ds-text)!important;}

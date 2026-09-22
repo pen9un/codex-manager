@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# 这些文件有逐字节哈希或上游来源记录，禁止换行转换。
+resources/** -text
+src/main/vendor/** -text
+src/shared/vendor/** -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary

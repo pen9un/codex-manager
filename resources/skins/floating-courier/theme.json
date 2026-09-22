@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-floating-courier",
+  "id": "floating-courier",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "浮岛信使",
+  "description": "云海浮岛与原创飞行信使，展开绘本式冒险。",
+  "tagline": "带着好奇，寄往未曾抵达的地方。",
+  "tags": [
+    "幻想",
+    "绘本",
+    "冒险"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#f1f6f5",
+    "panel": "#f1f6f5",
+    "panelAlt": "#e7ecf2",
+    "surface": "#ffffff",
+    "text": "#17202b",
+    "muted": "#4c5766",
+    "border": "#7b8798",
+    "accent": "#337084",
+    "accentAlt": "#337084",
+    "secondary": "#337084",
+    "highlight": "#337084"
+  },
+  "dark": {
+    "background": "#1d2940",
+    "panel": "#1d2940",
+    "panelAlt": "#29323e",
+    "surface": "#202934",
+    "text": "#ffffff",
+    "muted": "#c2c9d2",
+    "border": "#8996a8",
+    "accent": "#edc995",
+    "accentAlt": "#edc995",
+    "secondary": "#edc995",
+    "highlight": "#edc995"
+  },
+  "layout": "dream-banner",
+  "heroFit": "cover",
+  "heroFocusX": 0.73,
+  "heroFocusY": 0.49,
+  "heroZoom": 1,
+  "heroHeight": 360,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "lg",
+  "density": "spacious",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "浮岛信使",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "带着好奇，寄往未曾抵达的地方。",
+  "codexManager": {
+    "category": "anime",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "cloud",
+    "original": true,
+    "content_kind": "original",
+    "ui_revision": 1
+  }
+}

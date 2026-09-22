@@ -1,0 +1,70 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "LABUBU · 怪趣森林",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case: stylized-concept. A premium collectible-toy fantasy artwork of LABUBU from THE MONSTERS, use reference strictly for character identity: long upright pointed rabbit-like ears, broad pale vinyl face, large expressive eyes, mischievous broad grin with exactly nine distinct triangular white teeth, mint-green curly plush fur and tiny tan hands/feet. No keychain, no loop, no label. LABUBU is alive in a fantastical Nordic miniature forest, leaning playfully around a large softly curled fern, standing on a mossy tree root with whimsical mushrooms and a shallow crystal-clear stream. Keep anatomical proportions and characteristic silhouette; full body and both ears entirely in frame. Sophisticated whimsical 3D mixed tactile plush/vinyl art direction, delicate curly fibers, beautiful subsurface light, controlled depth-of-field and convincing contact shadows. Daytime palette mint green, butter cream, pale moss and soft warm yellow sun shafts. Wide 16:9 target 3840x2160. LABUBU body and face at right 72%, occupying x=58%-88% and y=17%-85%. Rich scene right half, left 43% quiet misty pale mint woodland with restrained detail for later UI. Art only, no text/logo/UI/diagram/monitor panels, no copyrighted product box or packaging, no watermark. New scene composition rather than recreation of product photo.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "db0b87f405d36a201aa851f6a8457e4654d25d037f1c23991fb93779f3037f2d",
+      "references": [
+        "https://www.popmart.com/us/collection/11/the-monsters"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/labubu-forest-light-home-1280.jpg",
+        "screenshot_sha256": "5004dff16efac49dd2b4089099b6c7f0b35f27480a34b0086cca3c4bed6a45f5",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Transform this exact LABUBU forest scene to enchanted NIGHT. Preserve recognizable LABUBU identity, pale vinyl face, nine triangular teeth smile, huge eyes, mint curly plush fur, pose, full upright ears, body scale and fern/hands position. Keep artwork rich tactile3D and the same camera composition. Sophisticated deep ink-purple and muted berry forest, softly bioluminescent teal moss, a few warm fireflies, subdued moonlight through treetops, pale lilac rims on curly fibers. Face clearly lit with soft warm reflected light, fur still visibly mint but darker in night. Stream reflects little teal and berry lights; mushrooms tasteful soft glow, not an oversaturated rainbow. Right half detailed creature and curled fern, left43% calm atmospheric dark plum mist reserved for later real interface. Full figure remains entirely visible. Not a dark filter: redesign night illumination and material reflections. Wide16:9 target3840x2160. Art only no typography/UI/logos/labels/packaging/keychain/watermark.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "e7d2b48f63f6ed56acd0aac253a67ce2c3087bdbdc69e22f652b06f5ce0d9fa8",
+      "references": [
+        "同组浅色原图"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/labubu-forest-dark-home-1280.jpg",
+        "screenshot_sha256": "8fd3cd7ccc02a71e750e96ba00a2eb72b810a5531dd5b72269e5bc891c84128a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.popmart.com/us/collection/11/the-monsters",
+    "https://www.popmart.com/us/products/675/the-monsters---exciting-macaron-vinyl-face-blind-box"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/labubu-forest.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

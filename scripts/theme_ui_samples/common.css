@@ -1,0 +1,85 @@
+/* 共享的是语义组件契约；各主题分别提供材质、结构和状态参数。 */
+:scope {
+  --cm-frame:var(--ds-panel);--cm-frame-text:var(--ds-text);--cm-sidebar:var(--ds-panel);
+  --cm-control:var(--ds-panel);--cm-raised:var(--ds-panel);--cm-selected:var(--ds-panel-2);
+  --cm-chrome-line:var(--ds-line);--cm-radius:12px;--cm-row-radius:8px;--cm-button-radius:8px;
+  --cm-line-width:1px;--cm-shadow:none;--cm-inset:none;--cm-row-shadow:none;
+  --cm-marker:var(--ds-green);--cm-accent-ink:var(--ds-bg);--cm-row-padding:9px 11px;
+  --cm-danger:#a62139;--cm-danger-bg:#fff0f1;--cm-success:#216544;
+}
+:scope[data-original-mode="dark"] {--cm-danger:#ffb6bf;--cm-danger-bg:#452630;--cm-success:#a2dec0;}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {
+  background:var(--cm-frame)!important;color:var(--cm-frame-text)!important;
+  border-bottom:1px solid var(--cm-chrome-line)!important;box-shadow:var(--cm-inset)!important;
+  text-shadow:none!important;border-radius:0!important;
+}
+:scope [data-cm-theme-part~="titlebar"] :is(button,svg,span),:scope [data-cm-theme-part~="header"] :is(button,svg,span) {color:inherit!important;}
+:scope [data-cm-theme-part~="sidebar"] {
+  background:var(--cm-sidebar)!important;color:var(--ds-text)!important;
+  border-right:1px solid var(--cm-chrome-line)!important;border-radius:0!important;box-shadow:var(--cm-inset)!important;
+}
+:scope [data-cm-theme-part~="sidebar"] :is(button,a,span,p) {text-shadow:none!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:1px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="conversation"] {
+  padding:var(--cm-row-padding)!important;
+  border:1px solid transparent!important;border-radius:var(--cm-row-radius)!important;
+  background:transparent!important;color:var(--ds-text)!important;box-shadow:none!important;transform:none!important;
+}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"],.bg-token-list-hover-background) {
+  background:var(--cm-selected)!important;border-color:var(--ds-line)!important;
+  color:var(--ds-text)!important;box-shadow:var(--cm-row-shadow)!important;
+}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"])::before {display:none!important;}
+:scope [data-cm-theme-part~="conversation"]:hover {background:var(--cm-selected)!important;}
+:scope :is([data-cm-theme-part~="dialog"],[data-cm-theme-part~="menu"],[data-cm-theme-part~="tooltip"]) {
+  background:var(--cm-raised)!important;color:var(--ds-text)!important;
+  border:var(--cm-line-width) solid var(--ds-line)!important;border-radius:var(--cm-radius)!important;
+  box-shadow:var(--cm-shadow)!important;text-shadow:none!important;
+}
+:scope [data-cm-theme-part~="menu-item"] {color:var(--ds-text)!important;border-radius:var(--cm-row-radius)!important;}
+:scope [data-cm-theme-part~="menu-item"]:is(:hover,:focus-visible,[data-highlighted]) {background:var(--cm-selected)!important;color:var(--ds-text)!important;}
+:scope [data-cm-theme-part~="settings"] {background:var(--ds-bg)!important;color:var(--ds-text)!important;}
+:scope [data-cm-theme-part~="panel"],:scope [data-cm-theme-part~="right-panel"] {
+  background:var(--cm-control)!important;color:var(--ds-text)!important;
+  border:var(--cm-line-width) solid var(--ds-line)!important;border-radius:var(--cm-radius)!important;box-shadow:var(--cm-inset)!important;
+}
+:scope [data-cm-theme-part~="composer"] {
+  background:var(--cm-control)!important;border:var(--cm-line-width) solid var(--ds-line)!important;
+  border-radius:var(--cm-radius)!important;box-shadow:var(--cm-shadow)!important;color:var(--ds-text)!important;
+}
+:scope [data-cm-theme-part~="composer"]:focus-within {border-color:var(--ds-green)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top:1px solid var(--cm-chrome-line)!important;}
+:scope [data-cm-theme-part~="input"]:not([contenteditable]) {
+  background:var(--ds-bg)!important;color:var(--ds-text)!important;border:1px solid var(--ds-line)!important;
+  border-radius:var(--cm-button-radius)!important;box-shadow:var(--cm-inset)!important;
+}
+:scope [data-cm-theme-part~="input"]::placeholder {color:var(--ds-muted)!important;opacity:1!important;}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])) {
+  color:var(--ds-text)!important;background:var(--cm-control)!important;border:1px solid var(--ds-line)!important;
+  border-radius:var(--cm-button-radius)!important;box-shadow:var(--cm-inset)!important;transform:none!important;
+  transition:background-color 140ms ease,border-color 140ms ease,box-shadow 140ms ease;
+}
+:scope [data-cm-theme-part~="button"]:where(:not([data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[role="switch"])):hover {background:var(--cm-selected)!important;border-color:var(--ds-green)!important;}
+:scope [data-cm-theme-part~="button"]:is([data-variant="primary"],[type="submit"],[data-cm-primary]) {
+  background:var(--ds-green)!important;color:var(--cm-accent-ink)!important;border-color:var(--ds-green)!important;
+}
+:scope [data-cm-theme-part~="button"]:is([data-variant="primary"],[type="submit"],[data-cm-primary]) :is(svg,span) {color:inherit!important;}
+:scope [data-cm-theme-part~="tab"] {border-radius:var(--cm-row-radius)!important;color:var(--ds-muted)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {color:var(--ds-text)!important;background:var(--cm-selected)!important;box-shadow:var(--cm-row-shadow)!important;}
+:scope :is([data-cm-theme-part~="button"],[data-cm-theme-part~="input"],[data-cm-theme-part~="conversation"],[data-cm-theme-part~="menu-item"],[data-cm-theme-part~="tab"]):focus-visible {outline:2px solid var(--ds-green)!important;outline-offset:3px!important;}
+:scope :is(button,a,input,textarea,[contenteditable]):focus-visible {outline:2px solid var(--ds-green)!important;outline-offset:3px!important;}
+:scope :is(button,input,select,textarea):disabled,:scope [aria-disabled="true"] {opacity:.55!important;cursor:not-allowed!important;box-shadow:none!important;}
+:scope [data-cm-theme-part~="input"][aria-invalid="true"] {border-color:var(--cm-danger)!important;}
+:scope [role="alert"] {color:var(--cm-danger)!important;background:var(--cm-danger-bg)!important;border-left:3px solid var(--cm-danger)!important;}
+:scope [role="switch"] {accent-color:var(--ds-green);}
+:scope [data-cm-theme-part~="thread"] {color:var(--ds-text)!important;background:var(--ds-bg)!important;}
+:scope [data-cm-theme-part~="message"][data-message-author-role="user"] {background:var(--cm-control)!important;border:1px solid var(--ds-line)!important;border-radius:var(--cm-radius)!important;color:var(--ds-text)!important;}
+:scope [data-cm-theme-part~="message"][data-message-author-role="assistant"] {background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;text-shadow:none!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="diff"],:scope [data-cm-theme-part~="terminal"] {background:var(--cm-control)!important;border:1px solid var(--ds-line)!important;border-radius:var(--cm-row-radius)!important;text-shadow:none!important;}
+:scope :is(pre,code,.xterm,.monaco-editor) {text-shadow:none!important;}
+:scope [data-cm-theme-part~="terminal"] pre {border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;}
+:scope main.dream-skin-home-shell {min-height:0!important;border-radius:0!important;}
+:scope main.dream-skin-home-shell > .dream-skin-role-main {border:var(--cm-line-width) solid var(--ds-line)!important;border-radius:var(--cm-radius)!important;box-shadow:var(--cm-shadow)!important;background:var(--cm-raised)!important;}
+:scope main:not(.dream-skin-home-shell) {background:var(--ds-bg)!important;background-image:none!important;border-radius:0!important;box-shadow:none!important;}
+:scope [data-cm-theme-part~="main"] {color:var(--ds-text)!important;}
+@media(prefers-reduced-motion:reduce) {:scope * {transition:none!important;}}

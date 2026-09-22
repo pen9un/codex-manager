@@ -1,0 +1,59 @@
+{
+  "original": true,
+  "ai_generated": true,
+  "theme": "浮岛信使",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "原创顶级幻想绘本横向插画，云白天青浅色世界，右侧一座漂浮在云海之上的小岛，茂盛的小树、邮局小屋、蜿蜒路径和精致小桥。一个原创小型机械燕子信使带着皮革信袋飞过右侧岛屿，独特青铜翅膀，非现有角色。左侧60%大面积柔和云海和浅蓝天空留白，微小暖金阳光，清晰手绘笔触、优雅色彩、细腻光影，有成年读者喜爱的高级绘本质感。16:9横向4K目标，不绘制文字、UI、标志、水印。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "8ab53b0e9fb85b0d44d78c58c652fd8b90d431a1615ff93909b6321aa864a853",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/floating-courier-light-home-1280.jpg",
+        "screenshot_sha256": "ecd895374b93ebe8d392aebd44e4598c0d082a48700593b3c8e086a7479f9057",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "文本生成原创图像"
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "将同一原创浮岛和青铜机械燕子信使的绘本构图重绘为暮蓝深色夜晚，温暖金色窗光、轻柔星光、深蓝云海。保留燕子与信袋、浮岛小屋形象和构图，精致手绘绘本质感，左侧60%安静暮蓝云海留白。无文字UI水印，横向16:9，4K目标。",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "a84919b74508aa1a04d02174940bce5f8e62b784b002e326a34922817e793ed4",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/floating-courier-dark-home-1280.jpg",
+        "screenshot_sha256": "28bdeef5cb6106a987339bcb5d6f563a131fe4b696e12e802ad14a91f9c3a974",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      },
+      "operation": "参考同组浅色原图进行 AI 重绘"
+    }
+  },
+  "preview": "由同一主题渲染引擎的隔离示例界面生成；不是实际用户会话截图",
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/floating-courier.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "哈尔 · 云上城堡",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case illustration-story. Premium hand-painted anime cinematic landscape for a desktop theme, starring recognizable Howl and Sophie from Howl's Moving Castle. Reference is CHARACTER IDENTITY ONLY, create entirely new scene and camera. Howl slender young adult man with blond bob, blue eyes, white shirt and pink/gray diamond cape, Sophie young adult woman with brown braided hair, straw hat and modest sage-green dress. Both standing together on flowering grassy hillside at right, looking toward an extraordinary distant walking castle of stacked weathered turrets, chimneys, pipes and mechanical legs among clouds. Affectionate quiet companionship, hands natural and clearly drawn. Full figures entirely visible within x=60%-89% y=20%-86%, castle distant at x=48%-62%, not behind faces. A sweeping cloud ocean and sunlit meadow extend across calm left40%, detail restrained for later real UI. Luminous blue sky, warm ivory clouds, olive meadow, painterly gouache architecture and delicate cel-shaded faces. Strong detailed characters and scene across right55%, exquisite depth and light. Wide16:9 target3840x2160. No lettering, labels, logo, watermark, UI, buttons, signs or mock dashboard.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "e15cd931ae61c999f5587ae94885a22cf67015befd1ac5d50464ae229c469691",
+      "references": [
+        "https://www.ghibli.jp/works/howl/"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/cloud-castle-light-home-1280.jpg",
+        "screenshot_sha256": "edd7156d06652778f0f707a92c66d8b3747d6a378e4dd51da1ddfcfa8bc22505",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Use case lighting-weather. Repaint the exact supplied Howl and Sophie meadow/cloud-castle composition at deep blue starry NIGHT. Keep both characters identities, blond Howl face and diamond cape, Sophie brown braid straw hat sage dress, their exact standing poses, proportions, faces, placement and all castle structures. Keep full figures and same camera. Silver moonlight outlines hair and grass, warm orange furnace glow through a few windows low in the castle, distant village golden pinlights in valley, subtle pale blue luminous clouds and a finely scattered starfield. Warm reflected light softly illuminates characters' faces without changing their colors. Right half richly detailed, left40% dark serene cloud ocean and valley for later real interface. Hand-painted gouache anime cinematic environment, celestial but restrained, not a global dark color filter. Landscape16:9 target3840x2160. No typography, logos, UI, watermark or extra characters.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "63235e6fc1c085d59a66ce1b55e87c1e8b37658e4f5b58ab1d4d82c1297814d3",
+      "references": [
+        "https://www.ghibli.jp/works/howl/"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/cloud-castle-dark-home-1280.jpg",
+        "screenshot_sha256": "27a9d335042dd535694c19f4418971e24d899968d663ce15b33ce291f301ceda",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.ghibli.jp/works/howl/"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/cloud-castle.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}

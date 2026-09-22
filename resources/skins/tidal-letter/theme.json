@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "uuid": "codex-manager-tidal-letter",
+  "id": "tidal-letter",
+  "version": "1.1.0",
+  "minEngineVersion": "2.0.0",
+  "name": "潮汐来信",
+  "description": "海岸漫射光与潮线，带来通透清爽的工作氛围。",
+  "tagline": "把思绪交给潮汐，把灵感留在此刻。",
+  "tags": [
+    "海岸",
+    "清爽",
+    "通透"
+  ],
+  "hero": "hero-light.webp",
+  "preview": "preview-light.webp",
+  "light": {
+    "background": "#f0f7f9",
+    "panel": "#f0f7f9",
+    "panelAlt": "#e7ecf2",
+    "surface": "#ffffff",
+    "text": "#17202b",
+    "muted": "#4c5766",
+    "border": "#7b8798",
+    "accent": "#186880",
+    "accentAlt": "#186880",
+    "secondary": "#186880",
+    "highlight": "#186880"
+  },
+  "dark": {
+    "background": "#10222e",
+    "panel": "#10222e",
+    "panelAlt": "#29323e",
+    "surface": "#202934",
+    "text": "#ffffff",
+    "muted": "#c2c9d2",
+    "border": "#8996a8",
+    "accent": "#8fd9e8",
+    "accentAlt": "#8fd9e8",
+    "secondary": "#8fd9e8",
+    "highlight": "#8fd9e8"
+  },
+  "layout": "dream-banner",
+  "heroFit": "cover",
+  "heroFocusX": 0.7,
+  "heroFocusY": 0.5,
+  "heroZoom": 1,
+  "heroHeight": 360,
+  "heroTextAlign": "left",
+  "heroScrim": 0,
+  "wallpaperEnabled": false,
+  "wallpaperFocusX": 0.5,
+  "wallpaperFocusY": 0.5,
+  "wallpaperOpacity": 0,
+  "wallpaperBlur": 0,
+  "radius": "md",
+  "density": "normal",
+  "fontPreset": "system",
+  "glass": false,
+  "shadow": "sm",
+  "decoration": 0,
+  "effects": {
+    "particles": 0,
+    "aurora": 0,
+    "glow": 0,
+    "noise": 0,
+    "grid": 0,
+    "float": 0
+  },
+  "brandSubtitle": "潮汐来信",
+  "projectPrefix": "项目 · ",
+  "projectLabel": "选择项目",
+  "statusText": "专注此刻",
+  "quote": "把思绪交给潮汐，把灵感留在此刻。",
+  "codexManager": {
+    "category": "nature",
+    "art": {
+      "light": "hero-light.webp",
+      "dark": "hero-dark.webp"
+    },
+    "thumbnails": {
+      "light": "preview-light.webp",
+      "dark": "preview-dark.webp"
+    },
+    "style": "original.css",
+    "motion": "none",
+    "original": true,
+    "content_kind": "original",
+    "ui_revision": 1
+  }
+}

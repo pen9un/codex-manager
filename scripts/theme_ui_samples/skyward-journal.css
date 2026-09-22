@@ -1,0 +1,31 @@
+/* 晴空绘旅：天空蓝手账、索引页签和暖橙行动；不改动原生导航布局。 */
+:scope {
+  --cm-frame:#e8f1fc;--cm-frame-text:#203954;--cm-sidebar:#eaf3fc;
+  --cm-control:#fffaf0;--cm-raised:#fffdf6;--cm-selected:#e3edfa;--cm-chrome-line:#637c99;
+  --cm-radius:6px 16px 6px 6px;--cm-row-radius:3px 12px 12px 3px;--cm-button-radius:6px;--cm-line-width:1px;
+  --cm-marker:#245ea5;--cm-accent-ink:#ffffff;--cm-shadow:3px 3px 0 #d1deef;
+  --cm-inset:inset 0 2px 0 #ffffff;--cm-row-shadow:inset 5px 0 0 #245ea5;--cm-row-padding:9px 12px;
+  --cm-action:#a64512;--cm-action-ink:#ffffff;--cm-journal-edge:#d1deef;--cm-page-rule:#b9cce2;
+  --ds-line:var(--cm-chrome-line)!important;
+}
+:scope[data-original-mode="dark"] {
+  --cm-frame:#233650;--cm-frame-text:#f1f6ff;--cm-sidebar:#1f3049;
+  --cm-control:#29364b;--cm-raised:#2b3a51;--cm-selected:#354864;--cm-chrome-line:#a5b8d2;
+  --cm-radius:6px 16px 6px 6px;--cm-row-radius:3px 12px 12px 3px;--cm-button-radius:6px;--cm-line-width:1px;
+  --cm-marker:#a7cef6;--cm-accent-ink:#18253c;--cm-shadow:3px 3px 0 #111f33;
+  --cm-inset:inset 0 2px 0 #4a5f7b;--cm-row-shadow:inset 5px 0 0 #a7cef6;--cm-row-padding:9px 12px;
+  --cm-action:#f1bd91;--cm-action-ink:#18253c;--cm-journal-edge:#111f33;--cm-page-rule:#425c7b;
+}
+:scope [data-cm-theme-part~="titlebar"],:scope [data-cm-theme-part~="header"] {border-bottom:3px double var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="sidebar"] {box-shadow:inset -4px 0 0 var(--cm-journal-edge)!important;}
+:scope [data-cm-theme-part~="project-list"] {border-top:1px dashed var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="conversation"]:is([aria-current="page"],[aria-selected="true"],[data-state="active"]) {border-right:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="composer"] {border-top:3px solid var(--cm-action)!important;box-shadow:3px 3px 0 var(--cm-journal-edge)!important;}
+:scope [data-cm-theme-part~="composer-toolbar"] {border-top-style:dashed!important;}
+:scope [data-cm-theme-part~="panel"],:scope [data-cm-theme-part~="right-panel"] {border-radius:0 12px 0 0!important;border-left:3px solid var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="menu"] {border-radius:3px 12px 3px 3px!important;border-top:3px solid var(--cm-action)!important;}
+:scope [data-cm-theme-part~="dialog"] {border-radius:6px!important;box-shadow:3px 3px 0 var(--cm-journal-edge),6px 6px 0 var(--cm-page-rule)!important;}
+:scope [data-cm-theme-part~="settings"] {box-shadow:inset 0 3px 0 var(--cm-page-rule)!important;}
+:scope [data-cm-theme-part~="tab"][aria-selected="true"] {border-radius:8px 8px 0 0!important;box-shadow:inset 0 3px 0 var(--cm-marker)!important;}
+:scope [data-cm-theme-part~="button"]:is([data-variant="primary"],[type="submit"],[data-cm-primary]) {background:var(--cm-action)!important;border-color:var(--cm-action)!important;color:var(--cm-action-ink)!important;}
+:scope [data-cm-theme-part~="code"]:is(pre),:scope [data-cm-theme-part~="terminal"] {border-radius:2px!important;border-left:3px double var(--cm-chrome-line)!important;color:var(--ds-text)!important;}

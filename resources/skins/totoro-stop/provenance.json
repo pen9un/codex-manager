@@ -1,0 +1,69 @@
+{
+  "original": false,
+  "content_kind": "ip-recreation",
+  "ai_generated": true,
+  "theme": "龙猫 · 森林候车站",
+  "assets": {
+    "light": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Premium hand-painted Japanese animated-film background with recognizable Totoro, an original new countryside bus-stop composition, not a copy of any movie frame. Wide 16:9 landscape target3840x2160. On RIGHT HALF stands beloved large gray Totoro, round furry grey body, pale cream belly with dark chevron markings, two pointed ears, small round eyes, triangular nose, tiny whiskers, gentle curious expression. Totoro holds a broad green leaf umbrella tilted to reveal face, a tiny white Totoro companion by his feet. Weathered rural bus stop pole with a simple BLANK circular sign, ancient camphor tree roots and a narrow country road, wild grasses, rice fields glimmering in the distance. Rain has just stopped, luminous clear morning sky, soft warm sunlight through emerald leaves, watercolor and gouache textures with delicate drawn edges, beautifully observed natural light and rich green depth. Totoro fully visible and grouped around x75%, within x60%-91%, y20%-85%. LEFT45% pale misty sky and quiet rice field atmosphere, soft open space for a later real interface, no high-contrast clutter. Authentic hand-painted animation background, no 3D plastic toy aesthetic, no generic animal substituting Totoro. Pure art ONLY, NO words, labels, logos, kanji, typography, UI, panels, watermark.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "b122a8236432a1a11528c1b4efac3548453df123dbe4bf5d9287636ebd0307f0",
+      "references": [
+        "https://www.ghibli.jp/works/totoro/"
+      ],
+      "operation": "按角色参考与独立构图生成",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/totoro-stop-light-home-1280.jpg",
+        "screenshot_sha256": "db6f9b61c8396530b73e187acd9b24ee1052e87e43135ea83508e027dddd8e2b",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    },
+    "dark": {
+      "method": "内置 image_gen AI 绘画",
+      "prompt": "Repaint this exact Totoro countryside bus stop scene at NIGHT after rain, preserve same Totoro face, gray furry body, cream chevron belly, pointed ears, leaf umbrella, tiny white Totoro, tree roots, blank circular bus-stop sign, road and composition. Rich hand-painted 2D Japanese animation background with gouache brush texture, no plastic3D. Deep teal-blue forest, indigo sky, sparse subtle fireflies in tree edges, warm amber lamp attached near the blank sign lighting Totoro belly and wet road, silver-blue moonlit rice paddies. Totoro recognizable and visible, soft gentle expression, beautiful controlled painterly lighting and reflective puddles. Left45% cool muted mist and valley, quiet contrast for interface later. Not merely dark filter, thoughtfully repaint night illumination. Entire characters in frame same positions, 16:9 target3840x2160. No text or lettering, no logo, no UI, no watermark.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "source_sha256": "79bec6ffb1a8f08ddcc2997bdc3f3264daf4f8f52c5440fff1b6eb638beb8eb3",
+      "references": [
+        "https://www.ghibli.jp/works/totoro/"
+      ],
+      "operation": "参考同组浅色图重绘夜间光照",
+      "preview": {
+        "method": "同引擎隔离 Electron 实际渲染",
+        "view": "home",
+        "viewport": [
+          1280,
+          800
+        ],
+        "screenshot": "F:/Codex-Temp/theme-ui-complete-20260921/visual-1/totoro-stop-dark-home-1280.jpg",
+        "screenshot_sha256": "4ebc549b7337ece65049b2e4e1f3373e76da6e8bc26e8478a0c305e16c6c873a",
+        "engine_bundle_sha256": "42b0cfd9565d62776f1e4a3bf158c0d202ef88f797a5e0ec51d750647af1aa24",
+        "note": "完整界面第二批；模拟结构，不是真实Codex截图"
+      }
+    }
+  },
+  "preview": "同一引擎隔离固定示例；不是实际用户会话截图",
+  "references": [
+    "https://www.ghibli.jp/works/totoro/"
+  ],
+  "component_design": {
+    "revision": 1,
+    "date": "20260921",
+    "recipe": "scripts/theme_ui_samples/totoro-stop.css",
+    "artwork": "沿用原有AI主图，未重新生成",
+    "acceptance": "隔离与实机分别记录，参见二十组完整界面验收报告"
+  }
+}
