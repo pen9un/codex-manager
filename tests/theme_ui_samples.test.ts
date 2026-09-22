@@ -41,7 +41,7 @@ describe('完整界面二十组主题契约', () => {
       expect(style).not.toMatch(/@import\b|url\s*\(/i)
       expect(Buffer.from(files['hero-light.webp'])).toEqual(await readFile(resolve(root, id, 'hero-light.webp')))
     }
-  }, 20000)
+  })
 
   it('非法视图仍被拒绝，旧主题首页可继续读取', async () => {
     await expect(render_skin_preview(samples[0], 'light', 'unknown' as 'home', false, root)).rejects.toThrow('预览参数无效')
