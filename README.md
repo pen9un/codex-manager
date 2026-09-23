@@ -8,7 +8,7 @@
   <a href="https://github.com/pen9un/codex-manager"><img src="https://img.shields.io/badge/version-2.0.1-3867B2" alt="源码版本 2.0.1" /></a>
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-0078D4" alt="构建平台 Windows、macOS 和 Linux" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22A06B" alt="项目代码使用 MIT 许可证" /></a>
-  <a href="https://github.com/pen9un/codex-manager/actions/workflows/ci.yml"><img src="https://github.com/pen9un/codex-manager/actions/workflows/ci.yml/badge.svg" alt="CI 执行状态" /></a>
+  <a href="https://github.com/pen9un/codex-manager/actions/workflows/release.yml"><img src="https://github.com/pen9un/codex-manager/actions/workflows/release.yml/badge.svg" alt="Release 发布状态" /></a>
 </p>
 <p align="center">
   <a href="#features">功能与演示</a> ·
@@ -304,7 +304,7 @@ Skills 按应用识别的用户级和当前工作目录范围扫描；“项目�
 
 文件名格式为 `Codex-Manager-<版本>-<系统>-<架构>.<扩展名>`。每次自动发布都附带 `SHA256SUMS.txt`，用于核对下载文件的 SHA-256。
 
-如果 Releases 暂无安装包，可以从源码启动，或到 [Actions](https://github.com/pen9un/codex-manager/actions/workflows/ci.yml) 下载成功构建的 `release-bundle`（需要登录 GitHub）。Windows 安装器尚无开发者证书签名；macOS 采用 ad-hoc 签名，尚未进行 Apple 公证。自动化构建不替代安装、升级及桌面功能的实机验收。
+如果 Releases 暂无安装包，可以从源码启动；维护者可手动运行 [发布 Release](https://github.com/pen9un/codex-manager/actions/workflows/release.yml)，自动完成构建和发布。Windows 安装器尚无开发者证书签名；macOS 采用 ad-hoc 签名，尚未进行 Apple 公证。自动化构建不替代安装、升级及桌面功能的实机验收。
 
 ### 从源码运行
 
@@ -378,7 +378,7 @@ pnpm run build:linux
 cmd /c scripts\build-windows.bat
 ```
 
-产物输出到 `releases/`。CI 使用 Windows x64、macOS Intel、macOS Apple Silicon 和 Linux x64 四个原生构建环境，执行测试、类型检查、生产构建和打包，最后验证全部安装包并生成校验清单。
+产物输出到 `releases/`。发布工作流使用 Windows x64、macOS Intel、macOS Apple Silicon 和 Linux x64 四个原生构建环境，执行测试、类型检查、生产构建和打包，最后验证全部安装包并生成校验清单。普通代码推送和 Pull Request 不会自动打包。
 
 ### 自动发布 Release
 
@@ -394,7 +394,7 @@ git push origin v2.0.2
 
 标签必须与 `package.json` 一致。全部平台构建成功后，工作流自动创建 Release 草稿、上传 7 个安装包及校验清单，再公开发布；版本说明会附带 GitHub 自动生成的变更记录。`v2.1.0-beta.1` 这类版本会标记为预发布。
 
-普通提交和手动运行 **CI** 只生成 Actions 构建产物；手动运行 **发布 Release** 会公开发版。已有版本标签必须指向本次构建提交，公开发布过的版本不会被工作流覆盖。此流程使用仓库自带的 `GITHUB_TOKEN`，无需额外配置个人访问令牌。详细操作与失败重试见 [GitHub 发布指南](docs/GitHub发布指南-20260923.md)。这里的自动发布不包含应用内自动更新。
+已移除每次提交自动打包的独立 CI 工作流。手动运行 **发布 Release** 后，测试、打包、上传和公开发版会连续自动完成。已有版本标签必须指向本次构建提交，公开发布过的版本不会被工作流覆盖。此流程使用仓库自带的 `GITHUB_TOKEN`，无需额外配置个人访问令牌。详细操作与失败重试见 [GitHub 发布指南](docs/GitHub发布指南-20260923.md)。这里的自动发布不包含应用内自动更新。
 
 <details>
 <summary>📁 目录结构与截图复现</summary>
