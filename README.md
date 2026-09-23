@@ -382,7 +382,9 @@ cmd /c scripts\build-windows.bat
 
 ### 自动发布 Release
 
-将 `package.json` 更新为目标版本并提交后，推送同名 `v` 标签即可触发发布。例如版本为 `2.0.2` 时：
+**手动发布**：打开 [发布 Release 工作流](https://github.com/pen9un/codex-manager/actions/workflows/release.yml)，点击 **Run workflow**，选择 `main`，再点击绿色的 **Run workflow**。工作流读取所选分支本次提交的 `package.json` 版本，所有平台通过后自动创建对应标签和 Release，无需先在本地打标签。首次发布当前版本可直接使用此入口；后续发布先更新版本号并提交。
+
+**标签触发发布**：将 `package.json` 更新为目标版本并提交后，推送同名 `v` 标签也可触发发布。例如版本为 `2.0.2` 时：
 
 ```bash
 git tag v2.0.2
@@ -392,7 +394,7 @@ git push origin v2.0.2
 
 标签必须与 `package.json` 一致。全部平台构建成功后，工作流自动创建 Release 草稿、上传 7 个安装包及校验清单，再公开发布；版本说明会附带 GitHub 自动生成的变更记录。`v2.1.0-beta.1` 这类版本会标记为预发布。
 
-普通提交和手动运行 **CI** 只生成 Actions 构建产物，不创建 Release；公开发布过的版本不会被工作流覆盖。此流程使用仓库自带的 `GITHUB_TOKEN`，无需额外配置个人访问令牌。详细操作与失败重试见 [GitHub 发布指南](docs/GitHub发布指南-20260923.md)。这里的自动发布不包含应用内自动更新。
+普通提交和手动运行 **CI** 只生成 Actions 构建产物；手动运行 **发布 Release** 会公开发版。已有版本标签必须指向本次构建提交，公开发布过的版本不会被工作流覆盖。此流程使用仓库自带的 `GITHUB_TOKEN`，无需额外配置个人访问令牌。详细操作与失败重试见 [GitHub 发布指南](docs/GitHub发布指南-20260923.md)。这里的自动发布不包含应用内自动更新。
 
 <details>
 <summary>📁 目录结构与截图复现</summary>

@@ -2,6 +2,7 @@
 const { createReadStream } = require('node:fs')
 const { appendFile, copyFile, lstat, mkdir, readdir, writeFile } = require('node:fs/promises')
 const { createHash } = require('node:crypto')
+const { execFileSync } = require('node:child_process')
 const path = require('node:path')
 
 const targets = {
@@ -26,6 +27,16 @@ function expected_assets(version, platform, arch) {
   const suffixes = platform ? targets[`${platform}-${arch}`] : Object.values(targets).flat()
   if (!suffixes) throw Error('不支持的构建平台或架构')
   return suffixes.map(suffix => `Codex-Manager-${version}-${suffix}`)
+}
+
+function verify_release_commit(directory, version, expected_commit) {
+  const { tag } = release_metadata(version)
+  if (!/^[0-9a-f]{40}$/i.test(expected_commit)) throw Error('缺少有效的发布提交')
+  const git = (...args) => execFileSync('git', args, { cwd: directory, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim()
+  if (git('rev-parse', 'HEAD') !== expected_commit) throw Error('检出代码与发布提交不一致')
+  if (git('tag', '--list', tag) && git('rev-parse', `refs/tags/${tag}^{commit}`) !== expected_commit) {
+    throw Error(`标签 ${tag} 已指向其他提交，请更新版本号后发布`)
+  }
 }
 
 async function check_file(file) {
@@ -71,6 +82,9 @@ async function main() {
   if (command === 'metadata') {
     if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, Object.entries(metadata).map(([key, value]) => `${key}=${value}\n`).join(''))
     console.log(`版本校验通过：${metadata.tag}（${metadata.prerelease ? '预发布' : '正式版'}）`)
+  } else if (command === 'verify-target') {
+    verify_release_commit(root, version, process.env.GITHUB_SHA || '')
+    console.log(`发布提交校验通过：${metadata.tag}`)
   } else if (command === 'collect') {
     const names = await collect_assets(path.join(root, 'releases'), directory, version, platform, arch)
     console.log(`已收集 ${names.length} 个 ${platform}/${arch} 安装包`)
@@ -89,8 +103,8 @@ async function main() {
       '- 本项目不包含客户端自动更新功能，请从 Releases 下载新版本。', '',
     ].join('\n'))
     console.log(`发布集合校验通过：${names.length} 个安装包，已生成 SHA256SUMS.txt 和版本说明`)
-  } else throw Error('用法：node scripts/release.cjs metadata | collect <win|mac|linux> <x64|arm64> | prepare')
+  } else throw Error('用法：node scripts/release.cjs metadata | verify-target | collect <win|mac|linux> <x64|arm64> | prepare')
 }
 
-module.exports = { release_metadata, expected_assets, collect_assets, prepare_release }
+module.exports = { release_metadata, expected_assets, collect_assets, prepare_release, verify_release_commit }
 if (require.main === module) main().catch(error => { console.error(`发布检查失败：${error.message}`); process.exitCode = 1 })

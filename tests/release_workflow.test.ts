@@ -4,8 +4,9 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import { createRequire } from 'node:module'
+import { execFileSync } from 'node:child_process'
 
-const { release_metadata, expected_assets, collect_assets, prepare_release } = createRequire(import.meta.url)('../scripts/release.cjs')
+const { release_metadata, expected_assets, collect_assets, prepare_release, verify_release_commit } = createRequire(import.meta.url)('../scripts/release.cjs')
 const fixtures: string[] = []
 const fixture = async () => {
   const directory = await mkdtemp(join(tmpdir(), 'codex-release-'))
@@ -15,6 +16,23 @@ const fixture = async () => {
 afterEach(async () => { for (const directory of fixtures.splice(0)) await rm(directory, { recursive: true, force: true }) })
 
 describe('发布版本与安装包门禁', () => {
+  it('手动发布允许新标签和相同提交，拒绝将已有轻量或附注标签用于其他提交', async () => {
+    const directory = await fixture()
+    const git = (...args: string[]) => execFileSync('git', ['-c', 'user.name=发布测试', '-c', 'user.email=release@example.invalid', '-c', 'commit.gpgsign=false', '-c', 'tag.gpgsign=false', ...args], { cwd: directory, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim()
+    git('init')
+    git('commit', '--allow-empty', '-m', '模拟首个提交')
+    const first_commit = git('rev-parse', 'HEAD')
+    expect(() => verify_release_commit(directory, '2.0.1', first_commit)).not.toThrow()
+    git('tag', 'v2.0.1')
+    git('tag', '-a', 'v2.0.2', '-m', '模拟附注标签')
+    expect(() => verify_release_commit(directory, '2.0.1', first_commit)).not.toThrow()
+    expect(() => verify_release_commit(directory, '2.0.2', first_commit)).not.toThrow()
+    git('commit', '--allow-empty', '-m', '模拟后续提交')
+    const next_commit = git('rev-parse', 'HEAD')
+    expect(() => verify_release_commit(directory, '2.0.1', next_commit)).toThrow(/其他提交/)
+    expect(() => verify_release_commit(directory, '2.0.2', next_commit)).toThrow(/其他提交/)
+    expect(() => verify_release_commit(directory, '2.0.3', '')).toThrow(/提交/)
+  })
   it('标签必须与软件版本一致，正确区分正式版和预发布版', () => {
     expect(release_metadata('2.0.1', 'refs/tags/v2.0.1')).toEqual({ version: '2.0.1', tag: 'v2.0.1', prerelease: false })
     expect(release_metadata('2.1.0-beta.1', 'refs/tags/v2.1.0-beta.1').prerelease).toBe(true)
