@@ -158,20 +158,134 @@ Skills 按应用识别的用户级和当前工作目录范围扫描；“项目�
 
 支持主题搜索与分类、首页和任务页预览、主题包导出，以及连接 Codex 后的外观备份、应用和恢复。部分主题带轻动效，并遵循系统的“减少动态效果”偏好。
 
+下面按完整 HTML 画廊的顺序展示全部主题。点击图片查看浅色大图，点击“深色效果”查看同一主题的深色外观。
+
 <table>
   <tr>
-    <th>☀️ 晨光中的小基地</th>
-    <th>🌙 星夜里的工作空间</th>
+    <td width="50%" align="center">
+      <strong>小果与大果 · 并肩小基地</strong><br />
+      <a href="docs/theme-gallery/visual-1/fruit-base-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/fruit-base-light-home-1280.webp" alt="小果与大果 · 并肩小基地浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/fruit-base-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/fruit-base-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>噜噜与噜妹 · 慢半拍搭档</strong><br />
+      <a href="docs/theme-gallery/visual-1/lulu-duo-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/lulu-duo-light-home-1280.webp" alt="噜噜与噜妹 · 慢半拍搭档浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/lulu-duo-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/lulu-duo-dark-home-1280.webp">深色效果</a>
+    </td>
   </tr>
   <tr>
-    <td><img src="docs/images/theme-light.png" alt="小果与大果主题浅色隔离预览" /></td>
-    <td><img src="docs/images/theme-dark.png" alt="小果与大果主题深色隔离预览" /></td>
+    <td width="50%" align="center">
+      <strong>吉伊卡哇 · 小小冒险队</strong><br />
+      <a href="docs/theme-gallery/visual-1/chiikawa-camp-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/chiikawa-camp-light-home-1280.webp" alt="吉伊卡哇 · 小小冒险队浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/chiikawa-camp-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/chiikawa-camp-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>LABUBU · 怪趣森林</strong><br />
+      <a href="docs/theme-gallery/visual-1/labubu-forest-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/labubu-forest-light-home-1280.webp" alt="LABUBU · 怪趣森林浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/labubu-forest-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/labubu-forest-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>龙猫 · 森林候车站</strong><br />
+      <a href="docs/theme-gallery/visual-1/totoro-stop-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/totoro-stop-light-home-1280.webp" alt="龙猫 · 森林候车站浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/totoro-stop-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/totoro-stop-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>千与千寻 · 海上列车</strong><br />
+      <a href="docs/theme-gallery/visual-1/sea-train-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/sea-train-light-home-1280.webp" alt="千与千寻 · 海上列车浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/sea-train-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/sea-train-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>哈尔 · 云上城堡</strong><br />
+      <a href="docs/theme-gallery/visual-1/cloud-castle-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/cloud-castle-light-home-1280.webp" alt="哈尔 · 云上城堡浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/cloud-castle-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/cloud-castle-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>像素开发部</strong><br />
+      <a href="docs/theme-gallery/visual-1/pixel-studio-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/pixel-studio-light-home-1280.webp" alt="像素开发部浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/pixel-studio-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/pixel-studio-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>透明机核</strong><br />
+      <a href="docs/theme-gallery/visual-1/crystal-core-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/crystal-core-light-home-1280.webp" alt="透明机核浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/crystal-core-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/crystal-core-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>零日终端</strong><br />
+      <a href="docs/theme-gallery/visual-1/zero-day-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/zero-day-light-home-1280.webp" alt="零日终端浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/zero-day-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/zero-day-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>霓虹疾行</strong><br />
+      <a href="docs/theme-gallery/visual-1/neon-rider-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/neon-rider-light-home-1280.webp" alt="霓虹疾行浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/neon-rider-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/neon-rider-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>苔原松风</strong><br />
+      <a href="docs/theme-gallery/visual-1/pine-retreat-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/pine-retreat-light-home-1280.webp" alt="苔原松风浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/pine-retreat-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/pine-retreat-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>潮汐来信</strong><br />
+      <a href="docs/theme-gallery/visual-1/tidal-letter-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/tidal-letter-light-home-1280.webp" alt="潮汐来信浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/tidal-letter-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/tidal-letter-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>纸上山河</strong><br />
+      <a href="docs/theme-gallery/visual-1/ink-landscape-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/ink-landscape-light-home-1280.webp" alt="纸上山河浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/ink-landscape-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/ink-landscape-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>星港远航</strong><br />
+      <a href="docs/theme-gallery/visual-1/orbital-harbor-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/orbital-harbor-light-home-1280.webp" alt="星港远航浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/orbital-harbor-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/orbital-harbor-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>霓虹雨巷</strong><br />
+      <a href="docs/theme-gallery/visual-1/neon-rain-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/neon-rain-light-home-1280.webp" alt="霓虹雨巷浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/neon-rain-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/neon-rain-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>浮岛信使</strong><br />
+      <a href="docs/theme-gallery/visual-1/floating-courier-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/floating-courier-light-home-1280.webp" alt="浮岛信使浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/floating-courier-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/floating-courier-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>绒云小筑</strong><br />
+      <a href="docs/theme-gallery/visual-1/cloud-cottage-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/cloud-cottage-light-home-1280.webp" alt="绒云小筑浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/cloud-cottage-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/cloud-cottage-dark-home-1280.webp">深色效果</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <strong>晴空绘旅</strong><br />
+      <a href="docs/theme-gallery/visual-1/skyward-journal-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/skyward-journal-light-home-1280.webp" alt="晴空绘旅浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/skyward-journal-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/skyward-journal-dark-home-1280.webp">深色效果</a>
+    </td>
+    <td width="50%" align="center">
+      <strong>月下弦歌</strong><br />
+      <a href="docs/theme-gallery/visual-1/moonlit-serenade-light-home-1280.webp"><img src="docs/theme-gallery/visual-1/moonlit-serenade-light-home-1280.webp" alt="月下弦歌浅色隔离预览" width="480" /></a><br />
+      <a href="docs/theme-gallery/visual-1/moonlit-serenade-light-home-1280.webp">浅色效果</a> · <a href="docs/theme-gallery/visual-1/moonlit-serenade-dark-home-1280.webp">深色效果</a>
+    </td>
   </tr>
 </table>
 
-上图是管理器内置的 **隔离示例预览**，实际 Codex 布局取决于客户端版本。应用主题需要受支持的本机连接；请按界面提示连接并保留备份。
+以上均为同引擎的 **隔离示例预览**，实际 Codex 布局取决于客户端版本。应用主题需要受支持的本机连接；请按界面提示连接并保留备份。
 
-想查看全部主题与更多页面状态？下载仓库后，用浏览器打开 [完整主题展示页](docs/theme-gallery/review.html)。
+**完整 HTML 画廊**：下载仓库后，在浏览器中打开 [docs/theme-gallery/review.html](docs/theme-gallery/review.html)。可切换浅色 / 深色、首页 / 任务页 / 设置 / 菜单与弹窗，以及不同窗口尺寸；请保留同目录下的 `visual-1/` 图片文件夹。
 
 <a id="quick-start"></a>
 
@@ -320,17 +434,6 @@ pnpm exec electron tests/readme_screenshots.cjs
 本项目自身代码使用 [MIT License](LICENSE)。内置主题、主题引擎和提示词模板保留各自的来源与许可证；第三方内容的权利不因打包而改变。相关说明见 `resources/skins/`、`resources/theme-engine/` 和 `src/shared/vendor/` 中的许可证及来源记录。
 
 感谢上游项目、素材贡献者，以及每一位报告问题、改进体验的使用者。
-
-## 🌈 作者与更多项目
-
-由 [@pen9un](https://github.com/pen9un) 维护。也欢迎看看我的其他项目：
-
-| 项目 | 介绍 |
-| --- | --- |
-| [Cursor Auto Helper](https://github.com/pen9un/cursor-auto-helper) | Cursor 自动化辅助工具；维护与兼容状态见项目说明 |
-| [画境师 · Art Prompt System](https://github.com/pen9un/art-prompt-system) | AI 绘画提示词生成与优化 |
-| [小果 AI 机器人](https://github.com/pen9un/xiaoguo-wechat-bot) | 微信 AI 助手与机器人应用 |
-| [DYSYS 抖音自媒体系统](https://github.com/pen9un/douyin-chatgpt-bot) | 抖音自媒体与智能互动工具 |
 
 ## ❤️ 支持项目
 
